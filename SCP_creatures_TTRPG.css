@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;    
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/dark-wall-texture-slate-background_24972-263.jpg?w=740&t=st=1716359484~exp=1716360084~hmac=851442438f83d846b6c9f8d0c1a28caea3cde279dd1e2daa954bbf455a94d9ce");
+    background-attachment: fixed;
+}
+
+#TTRPG_Format{
+    position: relative;
+    margin-right: 0;
+    top: 30px;
+    right: 10vi;
+    height: auto; 
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 85%;
+    margin: 5px auto;
+    padding: 5px 20px;
+    background-color: #ffffff63;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.397);
+}
+
+b{
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+  }
+
+.hidden {
+    display: none;
+}
+
+.safety_class{height:20px;}

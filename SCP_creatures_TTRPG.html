@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SCP_creatures_TTRPG.css">
+    <link rel="stylesheet" href="SCP_onclick_popup_look.css">
+    <link rel="stylesheet" href="SCP_stats.css">
+    <title>SCP Creatures - TTRPG</title>
+</head>
+
+<!--Rezise all images and save them: https://stackoverflow.com/questions/43541569/resize-image-with-javascript-and-save-to-disk-->
+<!--Max size width 1920px-->
+<!--imagemin-->
+<!--Make the site use different size photos if size is under a surtain size:  https://stackoverflow.com/questions/58871673/replace-image-url-and-the-size-when-screen-size-is-less-than-740px-using-javascr-->
+
+<body window.onload = loadImages;>
+    <h1 class="container"><img src="scp logo.png" style="height: 100px;">SCP Creatures
+        <form id="creatureForm">
+        <select id="TTRPG_Format" name="TTRPG_Format" required onchange="toggleFields()">
+            <option value="">Select Playing Format</option>
+            <option value="5th Edition">5th Edition</option>
+            <option value="Fallout">Fallout</option>
+            <!-- Add more options for other editions -->
+        </select>
+        </form>
+        </h1>
+  
+
+<div class="container">
+        <h2>List of SCP's:</h2>
+        <p id="openPopupText_SCP049" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 049 - Plague doctor</p>
+        <p id="openPopupText_SCP096" class="clickable-text"><img src="Type_Euclid.png" class="safety_class">SCP 096 - Shy Guy</p>
+        <p id="openPopupText_SCP106" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 106 - The Old Man</p>
+        <p id="openPopupText_SCP131" class="clickable-text"><img src="base_triangle.png" class="safety_class">Scp 131 - Eye Pods</p>
+        <p id="openPopupText_SCP173" class="clickable-text"><img src="Type_Euclid.png" class="safety_class">SCP 173 - Sculpture</p>
+        <p id="openPopupText_SCP354" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 354 - The Red Pool</p>
+        <p id="openPopupText_SCP427" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 427 - Lovecraftian Locket</p>
+        <p id="openPopupText_SCP513" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 513 - A cowbell</p>
+        <p id="openPopupText_SCP662" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 662 - Butler's Hand Bell</p>
+        <p id="openPopupText_SCP682" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP 682 - Hard to destroy reptile</p>
+        <p id="openPopupText_SCP939" class="clickable-text"><img src="Type_Keter.png" class="safety_class">SCP 939 - With many voices</p>
+        <p id="openPopupText_SCP999" class="clickable-text"><img src="Type_Safe.png" class="safety_class">SCP 999 - Tickle Monster</p>
+        <p id="openPopupText_SCP2316" class="clickable-text"><img src="Type_Keter.png" class="safety_class">SCP 2316 - Bodies in the water</p>
+        <p id="openPopupText_SCP--_-----_--_-" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP ●●|●●●●●|●●|●</p>
+        <p id="openPopupText_SCP3008" class="clickable-text"><img src="Type_Euclid.png" class="safety_class">SCP 3008 - Infinite Ikea</p>
+
+
+
+        
+<!--Base--><p id="openPopupText_SCP" class="clickable-text"><img src="base_triangle.png" class="safety_class">SCP</p>
+
+<!--Pop ups-->
+    <!--SCP 096- Shy Guy-->
+        <div id="popup_SCP096" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn_SCP096" class="close-btn">&times;</span>
+                    <img src="SCP_096_img.png" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="Type_Euclid.png"> <p class="SCP_Class_text">Class:Euclid</p></a>
+                    <p class="SCP_Name">SCP 096 - Shy Guy</p>
+                        <div id="SCP-info">
+                            <p><b>Special Containment Procedures:</b><br>SCP-096 is to be contained in its cell, a 5 m x 5 m x 5 m airtight steel cube, at all times. Weekly checks for any cracks or holes are mandatory. There are to be absolutely no video surveillance or optical tools of any kind inside SCP-096's cell. Security personnel will use pre-installed pressure sensors and laser detectors to ensure SCP-096's presence inside the cell. <br>Any and all photos, video, or recordings of SCP-096's likeness are strictly forbidden without approval from Dr. ███ and O5-█.</p>
+                            <p><b>Description:</b> SCP-096 is a humanoid creature measuring approximately 2.38 meters in height. Subject shows very little muscle mass, with preliminary analysis of body mass suggesting mild malnutrition. Arms are grossly out of proportion with the rest of the subject's body, with an approximate length of 1.5 meters each. Skin is mostly devoid of pigmentation, with no sign of any body hair.</p>
+                            <p>SCP-096's jaw can open to four (4) times the norm of an average human. Other facial features remain similar to an average human, with the exception of the eyes, which are also devoid of pigmentation. It is not yet known whether SCP-096 is blind or not. It shows no signs of any higher brain functions, and is not considered to be sapient.</p>
+                            <p>SCP-096 is normally extremely docile, with pressure sensors inside its cell indicating it spends most of the day pacing by the eastern wall. However, when someone views SCP-096's face, whether it be directly, via video recording, or even a photograph, it will enter a stage of considerable emotional distress. SCP-096 will cover its face with its hands and begin screaming, crying, and babbling incoherently. Approximately one (1) to two (2) minutes after the first viewing, SCP-096 will begin running to the person who viewed its face (who will from this point on be referred to as SCP-096-1).</p>
+                            <p>Documented speeds have varied from thirty-five (35) km/h to ███ km/h, and seems to depend on distance from SCP-096-1. At this point, no known material or method can impede SCP-096's progress. The actual position of SCP-096-1 does not seem to affect SCP-096's response; it seems to have an innate sense of SCP-096-1's location. Note: This reaction does not occur when viewing artistic depictions (see Document 096-1).</p>
+                            <p>Upon arriving at SCP-096-1's location, SCP-096 will proceed to kill and [DATA EXPUNGED] SCP-096-1. 100% of cases have left no traces of SCP-096-1. SCP-096 will then sit down for several minutes before regaining its composure and becoming docile once again. It will then attempt to make its way back to its natural habitat, [DATA REDACTED]</p>
+                            <p>Due to the possibility of a mass chain reaction, including breach of Foundation secrecy and large civilian loss of life, retrieval of subject should be considered Alpha priority.</p>
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 150 </div>
+                                <div id="armorclass"><a style="font-weight: bolder; z-index: 2;">AC</a> <br> 10 </div>
+                                <div id="speed"><a style="font-weight: bolder; z-index: 2;">Speed</a> <br> 300ft </div>
+                                <div id="FiveE_Strength" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>30<br><a style="font-size: small;">+10</a></div>
+                                <div id="FiveE_Dexterity" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Dexterity</a><br>30<br><a style="font-size: small;">+10</a></div>
+                                <div id="FiveE_Constitution" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Constitution</a><br>30<br><a style="font-size: small;">+10</a></div>
+                                <div id="FiveE_Inteligence" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Inteligence</a><br>1<br><a style="font-size: small;">-5</a></div>
+                                <div id="FiveE_Wisdom" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Wisdom</a><br>1<br><a style="font-size: small;">-5</a></div>
+                                <div id="FiveE_Charisma" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>1<br><a style="font-size: small;">-5</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Condition Immunity:</b>Blinded, Charmed, Deafened, Frightened, Petrified, Exhaustion, Invisible</li>
+                                    <li><b>Senses:</b>Passive perception 5</li>
+                                    <li><b>Languages:</b>Does not seem to be sentient.</li>
+                                <hr>
+                                    <li><b>Auto Healing:</b>Regens 2d10 HP pr round</li>
+                                    <li><b>Stunned:</b>If it's dealt above 30 damage in a round its stunned for 1 round (it still heals)</li> 
+                                    <li style="margin-top: 0px;"><b>Immortal:</b>if redused to 0hp it is stunned for 24hours (It cannot die)</li>
+                                    <li><b>DONT LOOK AT ME!:</b>Not hostile unless someone looks at its face</li>
+                                    <li><b>Nemesis:</b>096 alweays knows where the person who saw theire face is, and will ignore anything else until theire eliminated.</li>
+                                    
+                                </ul>
+                                <ul class="Creature_action">
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                    <li><b>Slam:</b><i>Melee Weapon Attack:</i>+4 to hit, reach 10ft.<br><i>Hit:</i>4d4 +2 bludgeoning damage. 
+                                        <br>If the creature is large or smaller it must suceed on a Strength saving throw (DC12) or be grappled.</li>
+                                    <li><b>Rip apart:</b><i>Grappled attack:</i>If 096 has grappled someone, he will try to tear them apart.
+                                        <br><i>Below 16:</i>deals 4d4+ 4 force damage.
+                                        <br><i>On a 16 or higher:</i> deals 4d12 +10 force damage.
+                                        <br><i>On nat 20:</i>096 rips them apart, instantly killing them.</li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 150 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 150</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 10 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 30</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>15<br><a style="font-size: small;">+10</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>15<br><a style="font-size: small;">+10</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>15<br><a style="font-size: small;">+10</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Condition Immunity:</b>Blinded, Buzzed, Dazed, Deafened, Dehydration, Drunk, Encumbered, Exshaustion, Fatigue, Frightened, Hammered, Heavy Encumbered, Hunger, Invisible, Radiation, Shadowed, Shock, Unconscious, Wasted</li>
+                                    <li><b>Senses:</b>Passive sence 5</li>
+                                    <li><b>Languages:</b>Does not seem to be sentient.</li>
+                                    <hr></ul> 
+                                   
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                        <li><b>Auto Healing:</b>Regens 1d10 HP pr round and 3d10 stamina points</li>
+                                        <li><b>Stunned:</b>If it's dealt above 30 damage in a round its stunned for 1 round (it still heals)</li>
+                                        <li><b>Imortal:</b>if redused to 0hp it is stunned for 24hours (It cannot die)</li>
+                                        <li><b>DONT LOOK AT ME!:</b>Not hostile unless someone looks at its face</li>
+                                        <li><b>Nemesis:</b>096 alweays knows where the person who saw theire face is, and will ignore anything else until theire eliminated.</li>
+                                        <hr>
+                                    </ul>
+                                   
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Slam:</b><i>Melee Weapon Attack:</i>+4 to hit, reach 10ft.<br><i>Hit:</i>4d4 +2 bludgeoning damage. 
+                                            <br>If the creature is large or smaller it must suceed on a Strength saving throw (DC12) or be grappled.</li>
+                                        <li><b>Rip apart:</b><i>Grappled attack:</i>If 096 has grappled someone, he will try to tear them apart.
+                                            <br><i>Below 16:</i>deals 4d4+ 4 force damage.
+                                            <br><i>On a 16 or higher:</i> deals 4d12 +10 force damage.
+                                            <br><i>On nat 20:</i>096 rips them apart, instantly killing them.</li>
+                                    </ul>
+                            </div>
+  
+            </div>
+        </div>
+    <!--SCP 173 - Peanut-->
+        <div id="popup_SCP173" class="popup">
+            <div class="popup-content">
+                <!--Scp id--><span id="closePopupBtn_SCP173" class="close-btn">&times;</span>
+                    <img src="SCP-173_img.jpeg" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="Type_Euclid.png"> <p class="SCP_Class_text">Class:Euclid</p></a>
+                    <p class="SCP_Name">SCP 173 - Sculpture</p>
+                        <div id="SCP-info">
+                            <p><b>Special Containment Procedures:</b><br>Item SCP-173 is to be kept in a locked container at all times. When personnel must enter SCP-173's container, no fewer than 3 may enter at any time and the door is to be relocked behind them. At all times, two persons must maintain direct eye contact with SCP-173 until all personnel have vacated and relocked the container.</p>
+                            <p><b>Description: </b>Moved to Site-19 1993. Origin is as of yet unknown. It is constructed from concrete and rebar with traces of Krylon brand spray paint. SCP-173 is animate and extremely hostile. The object cannot move while within a direct line of sight. Line of sight must not be broken at any time with SCP-173. Personnel assigned to enter container are instructed to alert one another before blinking. Object is reported to attack by snapping the neck at the base of the skull, or by strangulation. In the event of an attack, personnel are to observe Class 4 hazardous object containment procedures.</p>
+                            <p>Personnel report sounds of scraping stone originating from within the container when no one is present inside. This is considered normal, and any change in this behaviour should be reported to the acting HMCL supervisor on duty.</p>
+                            <p>The reddish brown substance on the floor is a combination of feces and blood. Origin of these materials is unknown. The enclosure must be cleaned on a bi-weekly basis.</p>
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="armorclass"><a style="font-weight: bolder; z-index: 2;">AC</a> <br> 0 </div>
+                                <div id="speed"><a style="font-weight: bolder; z-index: 2;">Speed</a> <br> 0ft </div>
+                                <div id="FiveE_Strength" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Dexterity" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Dexterity</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Constitution" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Constitution</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Inteligence" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Inteligence</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Wisdom" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Wisdom</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Charisma" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Damage Immunity:</b></li><!--Acid, Bludgeoning, Cold, Fire, Force, Lightning, Necrotic, , Piercing, Poison, Psychic, Radiant, Slashing, Thunder -->
+                                    <li><b>Condition Immunity:</b></li><!--Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious, Exhaustion, -->
+                                    <li><b>Senses:</b>Passive perception -- Darkvision? Truesight?</li>
+                                    <li><b>Languages:</b></li><!--Common, Dwarvish, Elvish, Giant, Gnomish, Goblin, Halfling, Orc, Abyssal, Celestial, Draconic, Deep Speech, Infernal, Primordial, Sylvan, Undercommon-->
+                                    </ul>
+                                    <ul class="Creature_action">
+                                    <hr>
+                                    <li><b>Passive:</b>Description</li>
+                                
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                    <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 0</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 0 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 0</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                <hr>
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                    <li><b>Damage Immunity/Resistance/Vulnerability:</b>-</li><!--Acid, Bludgeoning, Ballistic, Cold, Electricity, Explosive, Fire, Impact, Laser, Plasma, Piercing, Poison, Slashing-->
+                                    <li><b>Condition Immunity/Resistance/Vulnerability:</b>-</li><!--Blinded, Bleeding, Burning, Buzzed, Corroded, Dazed, Deafened, Dehydration, Drunk, Encumbered, Exshaustion, Fatigue, Frightened, Grappled, Hammered, Heavy Encumbered, Hunger, Invisible, Poisoned, Prone, Radiation, Restrained, Shadowed, Shock, Slowed, Unconscious, Wasted-->
+                                    <li><b>Senses:</b>Passive perception -</li>
+                                    <li><b>Languages:</b>---</li>
+                                        <p></p>
+                                    <li><b>Passive:</b>Description</li>
+                                    </ul>
+                                <hr>
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                    </ul>
+                            </div>
+
+            </div>
+        </div>
+    <!--Scp 939 - With many voices-->
+        <div id="popup_SCP939" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn_SCP939" class="close-btn">&times;</span>
+                    <img src="SCP_939_img.jpg" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="Type_Keter.png"> <p class="SCP_Class_text">Class:Keter</p></a>
+                    <p class="SCP_Name">Scp 939 - With many voices</p>
+                        <div id="SCP-info">
+                            <p><b>Special Containment Procedures:</b><br> SCP-939-1, -3, -19, -53, -89, -96, -98, -99, and -109 are kept in Cell 1163-A or 1163-B,</p>
+                            <p style="margin-top: 0px;">10 m x 10 m x 3 m containment chambers within Armed Bio-Containment Area-14. Both cells are environmentally regulated and negatively pressurized, with walls constructed of reinforced concrete. Access to these cells is regulated by an outer decontamination chamber and inner gas-tight steel security doors. Observation windows are constructed of laminated ballistics glass 10 cm in thickness protected by a 100kV electrified mesh. Humidity is maintained at 100% at a temperature of 16° C. Specimens are monitored at all times via infrared cameras. Level Four authorization is required to access SCP-939, their containment areas, or the observation chambers.</p>
+                            <p>SCP-939-101 is dismembered and stored in Cryogenic Preservation Tanks 939-101A to 939-101M within Bio-Research Area-12. Access to SCP-939-101 requires authorization by two Clearance Level 3 personnel, one of which must be present for all research and testing. The contents of only one (1) 939-101 tank may be accessed at any given time. Core temperature of SCP-939-101 tissues must be monitored while removed from cryogenic preservation; should core temperature exceed 10° C, tissues are to be returned to their corresponding tank and all testing suspended for a period of seventy-two (72) hours. Barring core temperature exceeding 10° C, research of SCP-939-101 tissues may continue as long as its ramblings and pleas for release may be tolerated.</p>
+                            <p>Containment cells should be cleaned biweekly. While this takes place, SCP-939 specimens will be transferred to the adjacent cell. During this time, the cell's door and observation window must be inspected for damage and repaired or replaced accordingly.</p>
+                            <p>Heavy sedation of all SCP-939 is required before any interaction, including transfer between cells and experimentation, may take place. See Document #939-TE4 for transfer and experimentation protocol.</p>
+                            <p>Level C Hazmat gear is to be worn by personnel during interactions with SCP-939 specimens and in any areas which SCP-939 have been known to inhabit. Afterward, standard decontamination procedures are to be observed by all personnel involved to ensure no secondary spread of amnestic agents occurs.</p>
+                            <p>Following Incident ABCA14-939-3, all non Class D personnel interacting with SCP-939 for any length of time are required to wear two (2) water-proof electronic pulse monitors for the duration of such interaction. These pulse monitors will transmit to a wireless monitoring system independent of a facility's main power grid, with at least one backup power system on standby. Should both an individual's pulse monitors flat-line or otherwise malfunction, the wearer will be presumed dead, personnel instructed to disregard all the wearer's subsequent vocalizations, and a breach of containment declared automatically. Security personnel responding to such a breach are likewise required to wear these pulse monitors.</p>
+                            <p>Additionally, all live SCP-939 must be implanted with subdermal tracking devices upon capture.</p>
+                            <p><b>Description:</b> SCP-939 are endothermic, pack-based predators which display atrophy of various systems similar to troglobitic organisms. The skins of SCP-939 are highly permeable to moisture and translucent red, owing to a compound chemically similar to hemoglobin. SCP-939 average 2.2 meters tall standing upright and weigh an average of 250 kg, though weight is highly variable. Each of their four limbs end in three-fingered claws with a fourth, opposable digit, and are covered in setae which considerably augment climbing ability. Their heads are elongated, devoid of even vestigial eyes or eye sockets, and contain no brain casing. The jaws of SCP-939 are lined with red, faintly luminescent fang-like teeth, similar to those belonging to specimens of the genus Chauliodus, up to 6 cm in length, and encircled by heat-sensitive pit organs. Eye spots, sensitive to light and dark, run the length of their spined dorsal ridges. These spines may be up to 16 cm long and are believed to be sensitive to changes in air pressure and flow.</p>
+                            <p>SCP-939 do not possess many vital organ systems; central and peripheral nervous systems, circulatory system, and digestive tract are all absent. SCP-939's respiratory system is atrophied and serves no apparent purpose beyond spreading AMN-C227 (see below). SCP-939 have no apparent physiological need to feed, nor any way to digest consumed tissue. Ingested material typically accumulates in the respiratory system of SCP-939 and is regurgitated once the amount is sufficient to markedly inhibit its function. Despite the absence of many vital organ systems, SCP-939 are capable of bearing live young. <b>See Addendum 10-16-1991.</b></p>
+                            <p>SCP-939's primary method of luring prey is the imitation of human speech in the voices of prior victims, though imitation of other species and active nocturnal hunts have been documented. SCP-939 vocalizations often imply significant distress; whether SCP-939 understand their vocalizations or are repeating previously heard phrases is the subject of ongoing study. How SCP-939 acquire voices is not currently understood; specimens have been documented imitating victims despite never hearing the victim speak. Analysis of SCP-939 vocalizations cannot distinguish between SCP-939 and samples of known victims' voices. The use of biometric voice-recognition security or identification systems at any installation housing SCP-939 is strongly discouraged for this reason. Prey is usually killed with a single bite to the cranium or neck; bite forces have been measured in excess of 35 MPa.</p>
+                            <p>SCP-939 exhale minute traces of an aerosolized Class C amnestic, designated AMN-C227. AMN-C227 causes temporary anterograde amnesia, inhibiting memory formation for the duration of exposure, plus an average of thirty (30) minutes. It is colorless, odorless, and tasteless with an estimated ECt50 for inhalation of 0.0015mg•min/m3. In well-ventilated or open air environments, risk of exposure to ECt50 is greatly reduced but not negligible. AMN-C227 is typically undetectable in the bloodstream sixty (60) minutes following cessation of exposure. Reported sensations of disorientation and mild hallucinations immediately following removal from environments saturated with the agent are similar to recreational use of numerous psychoactive substances and easily mistaken as such.</p>
+
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="armorclass"><a style="font-weight: bolder; z-index: 2;">AC</a> <br> 0 </div>
+                                <div id="speed"><a style="font-weight: bolder; z-index: 2;">Speed</a> <br> 0ft </div>
+                                <div id="FiveE_Strength" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Dexterity" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Dexterity</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Constitution" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Constitution</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Inteligence" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Inteligence</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Wisdom" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Wisdom</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Charisma" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Damage Immunity:</b></li><!--Acid, Bludgeoning, Cold, Fire, Force, Lightning, Necrotic, , Piercing, Poison, Psychic, Radiant, Slashing, Thunder -->
+                                    <li><b>Condition Immunity:</b></li><!--Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious, Exhaustion, -->
+                                    <li><b>Senses:</b>Passive perception -- Darkvision? Truesight?</li>
+                                    <li><b>Languages:</b></li><!--Common, Dwarvish, Elvish, Giant, Gnomish, Goblin, Halfling, Orc, Abyssal, Celestial, Draconic, Deep Speech, Infernal, Primordial, Sylvan, Undercommon-->
+                                    </ul>
+                                    <ul class="Creature_action">
+                                    <hr>
+                                    <li><b>Passive:</b>Description</li>
+                                
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                    <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 0</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 0 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 0</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                <hr>
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                    <li><b>Damage Immunity/Resistance/Vulnerability:</b>-</li><!--Acid, Bludgeoning, Ballistic, Cold, Electricity, Explosive, Fire, Impact, Laser, Plasma, Piercing, Poison, Slashing-->
+                                    <li><b>Condition Immunity/Resistance/Vulnerability:</b>-</li><!--Blinded, Bleeding, Burning, Buzzed, Corroded, Dazed, Deafened, Dehydration, Drunk, Encumbered, Exshaustion, Fatigue, Frightened, Grappled, Hammered, Heavy Encumbered, Hunger, Invisible, Poisoned, Prone, Radiation, Restrained, Shadowed, Shock, Slowed, Unconscious, Wasted-->
+                                    <li><b>Senses:</b>Passive perception -</li>
+                                    <li><b>Languages:</b>---</li>
+                                        <p></p>
+                                    <li><b>Passive:</b>Description</li>
+                                    </ul>
+                                <hr>
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                    </ul>
+                            </div>
+
+            </div>
+        </div>
+    <!--SCP 999- Orange Slime-->
+        <div id="popup_SCP999" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn_SCP999" class="close-btn">&times;</span>
+                    <img src="SCP_999_img.jpg" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="Type_Safe.png"> <p class="SCP_Class_text">Class:Safe</p></a>
+                    <p class="SCP_Name">SCP 999 - Tickle Monster</p>
+                        <div id="SCP-info">
+                            <p><b>Special Containment Procedures:</b><br>SCP-999 is allowed to freely roam the facility should it desire to, but otherwise must stay in its pen either between 8PM-9PM for sleeping, or during emergency lockdowns for its own safety.</p>
+                            <p style="margin-top: 0px;">Subject is not allowed out of its pen at night or off facility grounds at any time. Pen is to be kept clean and food replaced twice daily. All personnel are allowed inside SCP-999's holding area, but only if they are not assigned to other tasks at the time, or if they are on break. Subject is to be played with when bored and spoken to in a calm, non-threatening tone.</p>
+                            <p><b>Description:</b> SCP-999 appears to be a large, amorphous, gelatinous mass of translucent orange slime, weighing about 54 kg (120 lbs) with a consistency similar to that of peanut butter. Subject's size and shape is easily malleable and can change shape at will, though when at rest, SCP-999 becomes a rounded, oblate dome roughly 2 meters wide and 1 meter in height. The surface of SCP-999 consists of a thin, transparent membrane similar to that of an animal cell roughly .5 cm thick, and is highly elastic, allowing SCP-999 to flatten portions of its body up to 2 cm thin. This surface is also hydrophobic, although SCP-999 can willfully absorb liquids (see Addendum SCP-999-A). The rest of SCP-999's body is filled with a viscous orange substance of unknown chemical makeup, though it is capable of digesting organic materials with ease.</p>
+                            <p>Subject's temperament is best described as playful and dog-like: when approached, SCP-999 will often react with overwhelming elation, slithering over to the nearest person and leaping upon them, “hugging” them with a pair of pseudopods while nuzzling the person's face with a third pseudopod, all the while emitting high-pitched gurgling and cooing noises. The surface of SCP-999 emits a pleasing odor that differs with whomever it is interacting with. Recorded scents include chocolate, fresh laundry, bacon, roses, and Play-Doh™.</p>
+                            <p>Simply touching SCP-999's surface causes an immediate mild euphoria, which intensifies the longer one is exposed to SCP-999, and lasts long after separation from the creature. Subject's favorite activity is "tickle-wrestling", often by completely enveloping a person from the neck down and tickling them until asked to stop (though it does not always immediately comply with this request). Though injuries may occur, SCP-999 has never been found to purposefully attempt to harm others, and will immediately back away and contract its body into a quivering mound while gurgling in a matter similar to a whimpering dog, seemingly "apologizing" for hurting someone on accident.</p>
+                            <p>While the creature will interact with anyone, it seems to have a special interest in those who are unhappy or hurt in any way. Persons suffering from crippling depression or PTSD, for example, have reported having a far more positive outlook on life after multiple interactions with SCP-999. The possibility of manufacturing antidepressants from SCP-999's slime is currently being discussed.</p>
+                            <p>In addition to its playful behavior, SCP-999 seems to love all animals (especially humans), refusing to eat any meat and even risking its own life to save others, on one occasion leaping in front of a person to take a bullet fired at them (subject's intellect is still up for debate: though its behavior is infantile, it seems to understand human speech and most modern technology, including guns). SCP-999's diet consists entirely of candy and sweets, with M&M's™ and Necco™ wafers being its favorites. Its eating methods are similar to those of an amoeba.</p>
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 150 </div>
+                                <div id="armorclass"><a style="font-weight: bolder; z-index: 2;">AC</a> <br> 10 </div>
+                                <div id="speed"><a style="font-weight: bolder; z-index: 2;">Speed</a> <br> 300ft </div>
+                                <div id="FiveE_Strength" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Dexterity" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Dexterity</a><br>17<br><a style="font-size: small;">+3</a></div>
+                                <div id="FiveE_Constitution" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Constitution</a><br>16<br><a style="font-size: small;">+3</a></div>
+                                <div id="FiveE_Inteligence" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Inteligence</a><br>13<br><a style="font-size: small;">+1</a></div>
+                                <div id="FiveE_Wisdom" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Wisdom</a><br>16<br><a style="font-size: small;">+3</a></div>
+                                <div id="FiveE_Charisma" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>20<br><a style="font-size: small;">+5</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Damage Immunity:</b>Bludgeoning, Piercing, Slashing</li>
+                                    <li><b>Condition Immunity:</b>Blinded, Charmed, Deafened, Grappled, Prone</li>
+                                    <li><b>Senses:</b>Passive perception 8</li>
+                                    <li><b>Languages:</b>Understands all, but cannot speak</li>
+                                    </ul><hr>
+                                    <ul class="Creature_action">
+                                    <li><b>Amorphous:</b>SPC-999 can move through a space as narrow as 1 inch wide without squeezing</li>
+                                    <li><b>Spider Climb:</b>SCP-999 can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check</li>
+                                    <li><b>Adjusting Smell:</b>SCP-999 emits a pleasent smell withing 10ft. This smell differs for every creature it, and it alweays a smell the creature enjous.</li>
+                                    <li><b>Unusual Nature</b>SCP-999 dosn't require air, food, drink or sleep.</li>
+                                
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                    <li><b>Healing hug:</b>SCP-999 tries to hug and evelope a creature witin 5ft.
+                                        <br>A creature grappled by SCP-999 starts to feel at peace and a sence of mild euphoria.
+                                        <br>In addition, the creature geains 1d4 HP for eatch minute until full health.
+                                        <br>SCP-999 will not want to let go of the creature until theire full health.
+                                        <br>If the creature want to get out earlier they have to succeed a dc 15 con saving throw.</li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 150 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 150</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 10 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 30</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>18<br><a style="font-size: small;">+4</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                <li><b>Damage Immunity:</b>Bludgeoning, Piercing, Slashing</li>
+                                <li><b>Condition Immunity:</b>Blinded, Charmed, Deafened, Grappled, Prone</li>
+                                <li><b>Senses:</b>Passive perception 8</li>
+                                <li><b>Languages:</b>Understands all, but cannot speak</li>
+                                    </ul> <hr>
+                                   
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                    <li><b>Amorphous:</b>SPC-999 can move through a space as narrow as 1 inch wide without squeezing</li>
+                                    <li><b>Spider Climb:</b>SCP-999 can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check</li>
+                                    <li><b>Adjusting Smell:</b>SCP-999 emits a pleasent smell withing 10ft. This smell differs for every creature it, and it alweays a smell the creature enjous.</li>
+                                    <li><b>Unusual Nature</b>SCP-999 dosn't require air, food, drink or sleep.</li>
+                                        <hr>
+                                    </ul>
+                                   
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Healing hug:</b>SCP-999 tries to hug and evelope a creature witin 5ft.
+                                            <br>A creature grappled by SCP-999 starts to feel at peace and a sence of mild euphoria.
+                                            <br>In addition, the creature geains 1 HP for eatch minute until full health.
+                                            <br>SCP-999 will not want to let go of the creature until theire full health.
+                                            <br>If the creature want to get out earlier they have to succeed a dc 15 endurance saving throw.</li>
+                                    </ul>
+                            </div>
+  
+            </div>
+        </div>
+    <!--SCP 2316 - Bodies in the water-->
+        <div id="popup_SCP2316" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn_SCP2316" class="close-btn">&times;</span>
+                    <img src="SCP_2316_img.jpg" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="Type_Keter.png"> <p class="SCP_Class_text">Class:Keter</p></a>
+                    <p class="SCP_Name">SCP 2316 - Bodies in the water</p>
+                        <div id="SCP-info">
+                            <p><b>Laconic Containment Procedures:</b><br>Nobody should come into contact with it, and it should only be observed through cameras. The area is fenced and no one should pass it. You don't recognize the bodies in the water.</p>
+                            <p style="margin-top: 0px;"><b>Laconic Description:</b>SCP-2316 is a misty lake with many floating corpses in it. Those who observe the corpses will identify them as close people from their childhood. If someone enters the river, they will become a body in the water too. Those familiar with SCP-2316's properties will not be affected by the effect.</p>
+                            <p></p>
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">      
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Languages:</b>All</li><!--Common, Dwarvish, Elvish, Giant, Gnomish, Goblin, Halfling, Orc, Abyssal, Celestial, Draconic, Deep Speech, Infernal, Primordial, Sylvan, Undercommon-->
+                                    <p style="margin-top: 50px;"></p>
+                                    </ul>
+                                    <ul class="Creature_action">
+                                    <hr>
+                                    <li><b>Do you recognise the bodies in the water?:</b>
+                                        <br>If person does not know about the anomaly, they need to do a dr 18 wis save to not get charmed.
+                                        <br>If the person know about the anomaly they need to do a dr 10 wis save instead</li>
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                    <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 0</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 0 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 0</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                <hr>
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                    <li><b>Damage Immunity/Resistance/Vulnerability:</b>-</li><!--Acid, Bludgeoning, Ballistic, Cold, Electricity, Explosive, Fire, Impact, Laser, Plasma, Piercing, Poison, Slashing-->
+                                    <li><b>Condition Immunity/Resistance/Vulnerability:</b>-</li><!--Blinded, Bleeding, Burning, Buzzed, Corroded, Dazed, Deafened, Dehydration, Drunk, Encumbered, Exshaustion, Fatigue, Frightened, Grappled, Hammered, Heavy Encumbered, Hunger, Invisible, Poisoned, Prone, Radiation, Restrained, Shadowed, Shock, Slowed, Unconscious, Wasted-->
+                                    <li><b>Senses:</b>Passive perception -</li>
+                                    <li><b>Languages:</b>---</li>
+                                        <p></p>
+                                    <li><b>Passive:</b>Description</li>
+                                    </ul>
+                                   <hr>
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                    </ul>
+                            </div>
+  
+            </div>
+        </div>
+    <!--SCP 3008 - Infinite Ikea-->
+        <div id="popup_SCP3008" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn_SCP3008" class="close-btn">&times;</span>
+                    <img src="SCP-3008_img.webp" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="Type_Euclid.png"> <p class="SCP_Class_text">Class:Euclid</p></a>
+                    <p class="SCP_Name">SCP 3008 - Infinite Ikea</p>
+                        <div id="SCP-info">
+                            <p><b>Special Containment Procedures:</b><br>The retail park containing SCP-3008 has been purchased by the Foundation and converted into Site-██. All public roads leading to or passing by Site-██ have been redirected.</p>
+                            <p style="margin-top: 0px;">The entrance to SCP-3008 is to be monitored at all times, and no one is to enter SCP-3008 outside of testing, as permitted by the Senior Researcher.</p>
+                            <p>Humans exiting SCP-3008 are to be detained and then debriefed prior to the administration of amnestics. Dependent upon the duration of their stay in SCP-3008, a cover story may need to be generated prior to their release.</p>
+                            <p>Any other entities exiting SCP-3008 are to be terminated.</p>
+                            <p><b>Description:</b>SCP-3008 is a large retail unit previously owned by and branded as IKEA, a popular furniture retail chain. A person entering SCP-3008 through the main entrance and then passing out of sight of the doors will find themselves translocated to SCP-3008-1. This displacement will typically go unnoticed as no change will occur from the perspective of the victim; they will generally not become aware until they try to return to the entrance.</p>
+                            <p>SCP-3008-1 is a space resembling the inside of an IKEA furniture store, extending far beyond the limits of what could physically be contained within the dimensions of the retail unit. Current measurements indicate an area of at least 10km2 with no visible external terminators detected in any direction. Inconclusive results from the use of laser rangefinders has led to the speculation that the space may be infinite.</p>
+                            <p>SCP-3008-1 is inhabited by an unknown number of civilians trapped within prior to containment. Gathered data suggests they have formed a rudimentary civilisation within SCP-3008-1, including the construction of settlements and fortifications for the purpose of defending against SCP-3008-2.</p>
+                            <p>SCP-3008-2 are humanoid entities that exist within SCP-3008-1. While superficially resembling humans they possess exaggerated and inconsistent bodily proportions, often described as being too short or too tall. They possess no facial features and in all observed cases wear a yellow shirt and blue trousers consistent with the IKEA employee uniform.</p>
+                            <p>SCP-3008-1 has a rudimentary day-night cycle, determined by the overhead lighting within the space activating and deactivating at times consistent with the opening and closing times of the original retail store. During the "night" instances of SCP-3008-2 will become violent towards all other lifeforms within SCP-3008-1. During these bouts of violence they have been heard to vocalise phrases in English that are typically variations of "The store is now closed, please exit the building". Once "day" begins SCP-3008-2 instances immediately become passive and begin moving throughout SCP-3008-1 seemingly at random. They are unresponsive to questioning or other verbal cues in this state, though will react violently if attacked.</p>
+                            <p>SCP-3008-1 is known to have one or more exits located within, though these exits do not appear to have a fixed position, making it difficult to leave SCP-3008-1 once inside. Using any other door besides the main entrance to enter the structure or breaking through the walls of the retail unit leads into the non-anomalous interior of the original store.</p>
+                            <p>Since containment began 14 individuals have managed to exit SCP-3008. Following extensive debriefing all individuals have been administered amnestics and released.</p>
+                            <p><b>Incident 3008-1:</b>At 00:37 on ██/██/200█ a human male exited SCP-3008, followed 10 seconds later by an instance of SCP-3008-2. SCP-3008-2 caught and killed the man before itself being terminated by armed response personnel. This incident represents the only time an instance of SCP-3008-2 has been seen exiting SCP-3008. A full autopsy on the corpse was performed; see 3008-2 Autopsy Log for more details.</p>
+                            <p>The man was carrying an IKEA-branded journal seeming to document his time in SCP-3008-1, transcribed below verbatim.</p>
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 10 </div>
+                                <div id="armorclass"><a style="font-weight: bolder; z-index: 2;">AC</a> <br> 10 </div>
+                                <div id="speed"><a style="font-weight: bolder; z-index: 2;">Speed</a> <br> 30ft </div>
+                                <div id="FiveE_Strength" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>20<br><a style="font-size: small;">+5</a></div>
+                                <div id="FiveE_Dexterity" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Dexterity</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Constitution" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Constitution</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Inteligence" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Inteligence</a><br>0<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Wisdom" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Wisdom</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div id="FiveE_Charisma" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div style="margin-left: 0; margin-bottom: 0; font-size: large;"><b>SCP 3008-1:</b></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Condition Immunity:</b>Blinded, Charmed, Deafened, Frightened, Petrified, Poisoned, Unconscious, Exhaustion</li>
+                                    <li><b>Senses:</b>Passive perception 5</li>
+                                    <li><b>Languages:</b>Common, but does not seem to be sentient</li>
+                                    </ul>
+                                    <ul class="Creature_action">
+                                    <hr>
+                                    <li><b>Collegues:</b>SCP 3008-1 is drawn towards pieces of theire dead collegues.</li>
+                                
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Multiattack:</b>SCP 3008-1 makes two slam attacks</li>
+                                        <li><b>Slam:</b><i>Meelee Weapon Attack</i> +2 to hit, reach 10ft, one target<br><i>Hit:</i>2d4</li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 0</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 0 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 0</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>10<br><a style="font-size: small;">+5</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>0<br><a style="font-size: small;">-5</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>7<br><a style="font-size: small;">+2</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                <hr>
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                    <li><b>Condition Immunity:</b>Blinded, Bleeding, Buzzed, Dazed, Deafened, Dehydration, Drunk, Encumbered, Exshaustion, Fatigue, Frightened, Hammered, Heavy Encumbered, Hunger, Poisoned, Radiation, Shock, Unconscious, Wasted</li>
+                                    <li><b>Senses:</b>Passive perception 5</li>
+                                        <p></p>
+                                    <li><b>Collegues:</b>SCP 3008-1 is drawn towards pieces of theire dead collegues.</li>
+                                    </ul>
+                                   <hr>
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Multiattack:</b>SCP 3008-1 makes two slam attacks</li>
+                                        <li><b>Slam:</b><i>Meelee Weapon Attack</i> +2 to hit, reach 10ft, one target<br><i>Hit:</i>1d4</li>
+                                    </ul>
+                            </div>
+  
+            </div>
+        </div>
+
+    
+
+
+<!--Base-->
+    <!--Scp id-->
+        <div id="popup_SCP" class="popup">
+            <div class="popup-content">
+                <!--Scp id--><span id="closePopupBtn_SCP" class="close-btn">&times;</span>
+                    <img src="images.png" class="SCP_image">
+                    <a class="SCP_Class"> <img class="SCP_ClassImage" src="base_triangle.png"><!--<<<-Edit class--> <p class="SCP_Class_text">Class:Euclid</p></a>
+                    <p class="SCP_Name">SCP - Base</p>
+                        <div id="SCP-info">
+                            <p><b>Special Containment Procedures:</b><br>---</p>
+                            <p><br>----</p>
+                            <p style="margin-top: 0px;">----</p>
+                        </div>
+                        <div id="FiveE-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="armorclass"><a style="font-weight: bolder; z-index: 2;">AC</a> <br> 0 </div>
+                                <div id="speed"><a style="font-weight: bolder; z-index: 2;">Speed</a> <br> 0ft </div>
+                                <div id="FiveE_Strength" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Dexterity" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Dexterity</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Constitution" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Constitution</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Inteligence" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Inteligence</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Wisdom" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Wisdom</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <div id="FiveE_Charisma" class="FiveE_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>10<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                    <li><b>Damage Immunity:</b></li><!--Acid, Bludgeoning, Cold, Fire, Force, Lightning, Necrotic, , Piercing, Poison, Psychic, Radiant, Slashing, Thunder -->
+                                    <li><b>Condition Immunity:</b></li><!--Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious, Exhaustion, -->
+                                    <li><b>Senses:</b>Passive perception -- Darkvision? Truesight?</li>
+                                    <li><b>Languages:</b></li><!--Common, Dwarvish, Elvish, Giant, Gnomish, Goblin, Halfling, Orc, Abyssal, Celestial, Draconic, Deep Speech, Infernal, Primordial, Sylvan, Undercommon-->
+                                    </ul>
+                                    <ul class="Creature_action">
+                                    <hr>
+                                    <li><b>Passive:</b>Description</li>
+                                
+                                    <hr>
+                                    <a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                    <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                </ul>
+                        </div>
+                        <div id="Fallout-stat" class="stats hidden">
+                                <div id="healthpoints"><a style="font-weight: bolder; z-index: 2;">HP</a> <br> 0 </div>
+                                <div id="staminapoints"><a style="font-weight: bolder; font-size: medium;">Stamina Points</a> <br> 0</div>
+                                <div id="armorclass_Fallout"><a style="font-weight: bolder; z-index: 2;">Armor Class</a> <br> 0 </div>
+                                <div id="actionpoints"><a style="font-weight: bolder;">Action Points</a> <br> 0</div>
+                                <div id="Fallout_Strength" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Strength</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Perception" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Perception</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Endurance" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Endurance</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Charisma" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Charisma</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Intelligence" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Intelligence</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Agility" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Agility</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <div id="Fallout_Luck" class="Fallout_basestats"><a style="font-weight: bolder; z-index: 2; font-size: small;">Luck</a><br>5<br><a style="font-size: small;">0</a></div>
+                                <ul class="info_beside_image Creature_action">
+                                <hr>
+                                    <ul  class="Creature_action" style="margin-top: 20px;">
+                                    <li><b>Damage Immunity/ Resistance/ Vulnerability:</b>-</li><!--Acid, Bludgeoning, Ballistic, Cold, Electricity, Explosive, Fire, Impact, Laser, Plasma, Piercing, Poison, Slashing-->
+                                    <li><b>Condition Immunity/ Resistance/ Vulnerability:</b>-</li><!--Blinded, Bleeding, Burning, Buzzed, Corroded, Dazed, Deafened, Dehydration, Drunk, Encumbered, Exshaustion, Fatigue, Frightened, Grappled, Hammered, Heavy Encumbered, Hunger, Invisible, Poisoned, Prone, Radiation, Restrained, Shadowed, Shock, Slowed, Unconscious, Wasted-->
+                                    <li><b>Senses:</b>Passive perception -</li>
+                                    <li><b>Languages:</b>---</li>
+                                        <p></p>
+                                    <li><b>Passive:</b>Description</li>
+                                    </ul>
+                                   <hr>
+                                    <ul class="Creature_action"><a style="font-weight: bold; margin-right: 100px; text-decoration: underline;">Actions</a>
+                                        <li><b>Attack:</b><i>Attack type</i> Damage<br></li>
+                                    </ul>
+                            </div>
+  
+            </div>
+        </div>
+
+  
+</div>
+
+
+
+</body>
+<script src="SCP_onclick_popup.js"></script>
+<script src="SCP_defer_codes.js" defer></script>
+</html>
