@@ -1,60 +1,212 @@
+:root { 
+    --container: #ffffff63;
+    --popup:#8a8a8a;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 body {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;    
+    background-position: left;
     font-family: Arial, sans-serif;
     background-image: url("https://img.freepik.com/free-photo/dark-wall-texture-slate-background_24972-263.jpg?w=740&t=st=1716359484~exp=1716360084~hmac=851442438f83d846b6c9f8d0c1a28caea3cde279dd1e2daa954bbf455a94d9ce");
     background-attachment: fixed;
 }
-
-#TTRPG_Format{
+#TTRPG_Format {
     position: relative;
     margin-right: 0;
     top: 30px;
     right: 10vi;
-    height: auto; 
     background-color: rgba(255, 255, 255, 0);
     font-weight: bold;
 }
-
-.hidden {
-    display: none;
-}
-
-h1{
-    display: flex;
-    align-items: center;
-}
-h2{
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
 .container {
     max-width: 85%;
     margin: 5px auto;
     padding: 5px 20px;
-    background-color: #ffffff63;
+    background-color: var(--container);
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.397);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-
-b{
+.container .logo{
+    height: 100px;
+}
+h1 {
+    display: flex;
+    align-items: center;
+}
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.safety_class {
+    height: 20px;
+}
+/* Styling for clickable text */
+.clickable-text {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
-
-i {
-    font-style: italic;
-  }
-
-.hidden {
-    display: none;
+@media only screen and (max-width: 768px) {
+    #TTRPG_Format {
+        top: 38px;
+        right: 33vi;
+    }
+    .container {
+        max-width: 66%;
+        margin: 5px;
+    }
 }
 
-.safety_class{height:20px;}
+
+/* Overlay styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+/* Popup styling */
+.popup {
+    background: var(--popup);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;    /* Limit popup height to viewport */
+    overflow-y: auto;    /* Enable vertical scrolling */
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    min-height: 700px;
+    position: relative; /* Set the popup as the positioning context */
+}
+.popup h3 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 25px;
+}
+.popup img {
+    display: grid;
+    right: 10px;
+    width:210px; 
+    max-width: 21vw;
+    height: auto; 
+    border:5px solid;
+    border-color:black;
+    float: right; 
+    margin: 10px;
+    margin-bottom: 0;
+}
+.popup .safety_class{
+    position: absolute;
+    top:1%;
+    left:0px;
+    height: auto; 
+    max-height: 10%;
+    width: auto;
+    border: 0;
+}
+/* Popup text content */
+.popup .content {
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+}
+.popup h4 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: large;
+    margin: 0;
+}
+/* Ensure no spacing between <p> and the <ul> that follows it */
+.popup p + ul {
+    margin-top: 0 !important; /* Force removal of any margin above the <ul> */
+}
+/* Remove default margin from <p> elements */
+.popup p {
+    margin-bottom: 0 !important; /* Remove space below <p> elements */
+}
+/* Style <ul> and <li> for consistent spacing */
+.popup ul {
+    margin-top: 0 !important; /* Remove any extra space at the top of <ul> */
+    padding-left: 20px; /* Optional indentation for readability */
+}
+
+/* Button styling */
+.popup button {
+    display: block;
+    padding: 10px 16px;
+    background: #33333300;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;       /* Move button above the popup by 10px */
+    right: 0px;     /* Move button outside the popup to the right by 10px */
+    z-index: 1001;    /* Ensure button appears above other elements */
+}
+.popup button:hover {
+    color: black;
+}
+@media only screen and (max-width: 768px) {
+    .overlay {
+        left: 5px;
+        width: 83%;
+        align-items:normal;
+        justify-content: normal;
+    }
+    /* Popup styling */
+    .popup {
+        margin: 5px;
+        border-radius: 5px;
+        padding: 6px;
+    }
+    .popup h3 {
+        font-size: large;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    .popup img {
+        margin: 2px;
+        margin-right: 0px;
+        margin-bottom: 0;
+        right: 0;
+    }
+    .popup .safety_class{
+        display: none;
+    }
+    /* Popup text content */
+    .popup .content {
+        padding: 0px 0px 20px 0px;
+        width: 100%;
+        font-size: 90%;
+    }
+    .popup h4 {
+        font-size: medium;
+    }
+    /* Button styling */
+    .popup button {
+        padding:1px;
+    }
+}
