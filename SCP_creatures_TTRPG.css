@@ -1,6 +1,9 @@
 :root { 
-    --container: #ffffff63;
+    --container: rgba(161, 161, 161, 0.616);
+    --transparent:rgba(255, 255, 255, 0);
+    --textcolor:#000000;
     --popup:#8a8a8a;
+    --popupbackground:rgba(0, 0, 0, 0.7);
 }
 
 html, body {
@@ -8,25 +11,28 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
     font-family: Arial, sans-serif;
-    background-image: url("https://img.freepik.com/free-photo/dark-wall-texture-slate-background_24972-263.jpg?w=740&t=st=1716359484~exp=1716360084~hmac=851442438f83d846b6c9f8d0c1a28caea3cde279dd1e2daa954bbf455a94d9ce");
+    background-image: url("images/dark-wall-texture-slate-background.jpg");
     background-attachment: fixed;
+    overflow-x: hidden;
 }
-#TTRPG_Format {
+#TTRPG_Format,#TTRPG_player {
     position: relative;
     margin-right: 0;
     top: 30px;
-    right: 10vi;
-    background-color: rgba(255, 255, 255, 0);
+    right: 0;
+    background-color: var(--transparent);
     font-weight: bold;
+    
 }
 .container {
-    max-width: 85%;
+    width: 60%;
     margin: 5px auto;
     padding: 5px 20px;
     background-color: var(--container);
@@ -49,7 +55,7 @@ h2 {
 }
 /* Styling for clickable text */
 .clickable-text {
-    color: black;
+    color: var(--textcolor);
     text-decoration: underline;
     cursor: pointer;
     display: block;
@@ -58,16 +64,27 @@ h2 {
     margin-bottom: 5px;
     font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
-    #TTRPG_Format {
+hr{
+    border: 1px solid var(--textcolor);
+}
+@media only screen and (max-width: 900px) {
+    #TTRPG_Format,#TTRPG_player {
         top: 38px;
         right: 33vi;
     }
     .container {
-        max-width: 66%;
-        margin: 5px;
+        width: 85%;
+        max-width: 88vw;
+    }
+    .clickable-text {
+        margin-left: 0;
+        font-size: medium;
+    }
+    .logo {
+        max-width: 100%;
     }
 }
+
 
 
 /* Overlay styling */
@@ -77,7 +94,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--popupbackground);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,6 +121,8 @@ h2 {
     text-align: center;
     font-size: x-large;
     margin-top: 25px;
+    margin-left: 10%;
+    text-decoration: underline;
 }
 .popup img {
     display: grid;
@@ -112,7 +131,7 @@ h2 {
     max-width: 21vw;
     height: auto; 
     border:5px solid;
-    border-color:black;
+    border-color:var(--textcolor);
     float: right; 
     margin: 10px;
     margin-bottom: 0;
@@ -122,7 +141,7 @@ h2 {
     top:1%;
     left:0px;
     height: auto; 
-    max-height: 10%;
+    max-width: 10%;
     width: auto;
     border: 0;
 }
@@ -135,8 +154,9 @@ h2 {
 .popup h4 {
     font-weight: bolder;
     text-align: center;
-    font-size: large;
+    font-size: larger;
     margin: 0;
+    text-decoration: underline;
 }
 /* Ensure no spacing between <p> and the <ul> that follows it */
 .popup p + ul {
@@ -151,12 +171,24 @@ h2 {
     margin-top: 0 !important; /* Remove any extra space at the top of <ul> */
     padding-left: 20px; /* Optional indentation for readability */
 }
+/* For WebKit Browsers */
+::-webkit-scrollbar {
+    width: 0.7vw;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--transparent); 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--popupbackground); /* Black color for the scroll thumb */
+    border-radius: 50%; /* Optional: rounds the thumb */
+}
+
 
 /* Button styling */
 .popup button {
     display: block;
     padding: 10px 16px;
-    background: #33333300;
+    background: var(--transparent);
     color: white;
     border: none;
     border-radius: 0;
@@ -165,48 +197,70 @@ h2 {
     top: 0px;       /* Move button above the popup by 10px */
     right: 0px;     /* Move button outside the popup to the right by 10px */
     z-index: 1001;    /* Ensure button appears above other elements */
+    font-size: larger;
 }
 .popup button:hover {
-    color: black;
+    color: var(--textcolor);
 }
 @media only screen and (max-width: 768px) {
+    /* Overlay styling */
     .overlay {
-        left: 5px;
-        width: 83%;
-        align-items:normal;
-        justify-content: normal;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start; /* Aligns the popup at the top */
+        justify-content: center;
+        overflow-y: auto;
+        padding-top: 2vw; /* Adds consistent spacing at the top */
+        padding-bottom: 2vw; /* Adds consistent spacing at the bottom */
+        box-sizing: border-box; /* Ensures padding is within viewport size */
     }
+
     /* Popup styling */
     .popup {
-        margin: 5px;
+        max-height: 80vh; /* Ensures popup height remains within the viewport */
+        overflow-y: auto; /* Enables scrolling within the popup */
+        width: 90vw; /* Constrains width on small screens */
+        padding: 10px;
         border-radius: 5px;
-        padding: 6px;
+        margin: 0 auto; /* Centers horizontally */
     }
+
+    /* Additional styling adjustments */
     .popup h3 {
         font-size: large;
         margin-top: 2%;
-        margin-left: 0%;
+        margin-left: 0;
     }
+
     .popup img {
         margin: 2px;
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 0;
-        right: 0;
+        max-width: 30%; /* Ensures image stays within popup */
     }
-    .popup .safety_class{
-        display: none;
+
+    .popup .safety_class {
+        display: none; /* Hides safety class image to save space */
     }
-    /* Popup text content */
+
     .popup .content {
-        padding: 0px 0px 20px 0px;
+        padding: 0 0 20px 0; /* Reduces padding for more content space */
         width: 100%;
-        font-size: 90%;
+        font-size: 90%; /* Slightly smaller font for readability */
     }
+
     .popup h4 {
         font-size: medium;
     }
-    /* Button styling */
+
     .popup button {
-        padding:1px;
+        padding: 1px;
+        font-size: x-large;
     }
 }
+
+
+
+
+

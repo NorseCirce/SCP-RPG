@@ -9,14 +9,20 @@
 
 <body>
     <h1 class="container">
-        <img src="images/scp logo.png" class="logo"> SCP Creatures
+        <img src="images/scp_logo.png" class="logo"> SCP Creatures
         <form id="creatureForm">
             <select id="TTRPG_Format" name="TTRPG_Format" required onchange="toggleFields()">
-                <option value="">Select Playing Format</option>
+                <option style="font-weight: bold;" value="">Select</option>
                 <option value="">Info</option>
                 <option value="5th Edition">5th Edition</option>
                 <option value="Fallout">Fallout</option>
-                <option value="Mork Borg">Mork Borg</option>
+                <option value="Mork Borg">Mörk Borg</option>
+            </select>
+        </form>
+        <form id="playerForm">
+            <select id="TTRPG_player" name="TTRPG_player" required onchange="toggleFields()">
+                <option value="scp">SCP's</option>
+                <option value="playable">Playable</option>
             </select>
         </form>
     </h1>
