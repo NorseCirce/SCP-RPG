@@ -15,6 +15,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A weathered, seemingly ordinary key with a slight tarnish. It feels heavier than it looks, and its handle is engraved with faint, strange symbols that shift when glanced at from different angles. The Skeleton Key is rumored to open any lock, from the mundane to the mystical, and those who wield it may find themselves in both fortune and peril.`,
                         "Other": `
                                 <p><b>Universal Unlock:</b> The Skeleton Key can unlock any lock, physical or magical, without fail. This includes doors, chests, cages, and even enchanted or cursed locks. To use the Skeleton Key, simply insert it into any lock and turn—it will adjust its shape to fit the mechanism perfectly. This action does not require a roll; the lock will click open instantly.</p>
                                 <p><b>Mystical Awareness:</b> The Skeleton Key has a strange, almost sentient awareness of what it is unlocking. Each time it is used, roll a d6. On a 1, the key "rejects" the lock, refusing to turn and remaining firmly in place. This rejection often occurs when unlocking something of immense importance or great evil, as if the key itself hesitates to allow access.</p>
@@ -47,6 +48,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A tall, eerie figure clad in the garments and mask of a medieval plague doctor. It moves with calm deliberation, exuding an aura of dread and mystery. SCP-049 speaks softly of “The Pestilence,” an affliction it alone claims to understand and “cure.” However, this cure is lethal, transforming its victims into reanimated servants, bound to its will. SCP-049’s touch is as deadly as its intentions, and it strikes with a disturbing calmness in pursuit of its “treatment.”`,
                         "HP": 14,
                         "Morale": "10 (resolute in its mission to eradicate “The Pestilence”)",
                         "Armor": "2 (thick, ceremonial robes resistant to ordinary damage)",
@@ -83,7 +85,8 @@ const scpData = {
                                     </ul>
                                 </p>
                                 <p><b>Immunity to Disease:</b> SCP-049 is immune to all diseases, poisons, and curses, considering itself a protector against infection and corruption.</p>
-                                `
+                                `,
+                        "Weakness": `<p>SCP-049 can be subdued through tranquilizers and contained by keeping it isolated, as it becomes docile when not directly engaged in its "curing."</p>`,
                     }
                 }
             }
@@ -101,6 +104,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `An innocuous-looking toothbrush labeled in crude writing as “The World’s Best Toothbrush.” Despite its humble appearance, this strange object has the ability to erase nearly any material it touches, leaving only a smooth void where once there was matter. Rumors say it was made by a mad sorcerer seeking to remove all blemishes from his kingdom.`,
                         "Usage": "Can be used carefully to erase objects or recklessly to harm",
                         "SpecialAbilities": `
                                 <p><b>Erase Material:</b> SCP-063 can “erase” almost any solid material with a brushing motion, disintegrating it smoothly. The material touched by the brush vanishes completely, leaving behind a flat, void-like surface. Roll Presence DR10 to control its erasing effect:
@@ -170,6 +174,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A towering figure clad in ancient, bloodstained armor, with skin covered in ritual scars and eyes that blaze with a cold, unfeeling rage. Able awakens periodically from his indestructible sarcophagus, seeking out warriors and enemies to test his skill and satisfy his endless thirst for combat. Able speaks little but fights with a brutal efficiency that few can match, leaving a trail of devastation in his wake.`,
                         "HP": 20,
                         "Morale": "12 (unyielding; never retreats)",
                         "Armor": "3 (ancient armor and unnatural resilience)",
@@ -196,7 +201,8 @@ const scpData = {
                                         <li><b>Effect:</b> For each enemy Able kills, he gains +1 to damage and attack rolls, lasting for the remainder of the combat. If no enemies remain, he becomes increasingly agitated and may lash out at any living creature nearby.</li>
                                     </ul>
                                 </p>
-                                `
+                                `,
+                        "Weakness": `<p>Extreme caution is used in containment. SCP-076 can be temporarily subdued with heavy artillery or explosives but is difficult to neutralize permanently due to rapid regeneration.</p>`,
                     }
                 }
             }
@@ -285,6 +291,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A wretched, emaciated figure, pallid and trembling, its face hidden. It only wanders aimlessly, moaning softly—until someone sees its face. Then, all will know death.`,
                         "HP": 20,
                         "Morale": "--",
                         "Armor": "Near-Invulnerability (see below)",
@@ -306,7 +313,50 @@ const scpData = {
                                 </ul></p>
                                 <p><b>Unstoppable:</b> SCP-096 cannot be stopped by walls, traps, or terrain while enraged. It moves unerringly toward its target, ignoring any obstacles. Once it reaches the viewer, it attacks without mercy. If its target dies, SCP-096 reverts to its calm state and wanders aimlessly.</p>
                                 <p><b>Regeneration:</b> If SCP-096 takes any damage, it heals at a rate of 1d6 HP per round, making it nearly impossible to kill even with supernatural means unless damage is dealt continuously.</p>
-                            `
+                            `,
+                        "Weakness": `<p>Avoiding eye contact with its face. SCP-096 will become docile once it has eliminated those who viewed it. Physical containment without eye exposure is essential.</p>`,
+                    }
+                }
+            }
+        },
+        {//SCP 106
+            "id": "SCP106",//"SCP000"
+            "name": "SCP 106 - The Old Man",
+            "safety_class": "Keter",
+            "image": "images/SCP-106_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `No physical interaction with SCP-106 is allowed at any time. All physical interaction must be approved by no less than a two-thirds vote from O5-Command. Any such interaction must be undertaken in AR-II maximum security sites, after a general non-essential staff evacuation. All staff (Research, Security, Class D, etc.) are to remain at least sixty meters away from the containment cell at all times, except in the event of breach events.
+                            <p>SCP-106 is to be contained in a sealed container, comprised of lead-lined steel. The container will be sealed within forty layers of identical material, each layer separated by no less than 36cm of empty space. Support struts between layers are to be randomly spaced. Container is to remain suspended no less than 60cm from any surface by ELO-IID electromagnetic supports.</p>
+                            <p>Secondary containment area is to be comprised of sixteen spherical “cells”, each filled with various fluids and a random assembly of surfaces and supports. Secondary containment is to be fitted with light systems, capable of flooding the entire assembly with no less than 80,000 lumens of light instantly with no direct human involvement. Both containment areas are to remain under 24 hour surveillance.</p>
+                            <p>Any corrosion observed on any containment cell surfaces, staff members, or other site locations within two hundred meters of SCP-106 are to be reported to Site Security immediately. Any objects or personnel lost to SCP-106 are to be deemed missing/KIA. No recovery attempts are to be made under any circumstances.</p>
+                            `,
+                    "description": `SCP-106 appears to be an elderly humanoid, with a general appearance of advanced decomposition. This appearance may vary, but the “rotting” quality is observed in all forms. SCP-106 is not exceptionally agile, and will remain motionless for days at a time, waiting for prey. SCP-106 is also capable of scaling any vertical surface and can remain suspended upside down indefinitely. When attacking, SCP-106 will attempt to incapacitate prey by damaging major organs, muscle groups, or tendons, then pull disabled prey into its pocket dimension. SCP-106 appears to prefer human prey items in the 10-25 years of age bracket.`,
+                    "additional": `<p>SCP-106 causes a “corrosion” effect in all solid matter it touches, engaging a physical breakdown in materials several seconds after contact. This is observed as rusting, rotting, and cracking of materials, and the creation of a black, mucus-like substance similar to the material coating SCP-106. This effect is particularly detrimental to living tissues, and is assumed to be a “pre-digestion” action. Corrosion continues for six hours after contact, after which the effect appears to “burn out”.</p>
+                            <p>SCP-106 is capable of passing through solid matter, leaving behind a large patch of its corrosive mucus. SCP-106 is able to “vanish” inside solid matter, entering what is assumed to be a form of “pocket dimension”. SCP-106 is then able to exit this dimension from any point connected to the initial entry point (examples: “entering” the inner wall of a room, and “exiting” the outer wall. Entering a wall, and exiting from the ceiling). It is unknown if this is the point of origin for SCP-106, or a simple “lair” created by SCP-106.</p>
+                            <p>Limited observation of this “pocket dimension” has shown it to be comprised mostly of halls and rooms, with [DATA EXPUNGED] entry. This activity can continue for days, with some subjected individuals being released for the express purpose of hunting, recapture, [DATA EXPUNGED].</p>`
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A decaying, skeletal figure dripping with a viscous, black sludge, SCP-106 moves slowly and deliberately, stalking its victims with a sadistic intent. It can pass through walls and drag people into its own nightmarish pocket dimension, where only agony awaits.`,
+                        "HP": `22 (4d6+8)`,
+                        "Morale": `13 ("Relentless and sadistic; it will never retreat, toying with its victims until death")`,
+                        "Armor": "	4 (Putrid, resilient flesh resistant to physical damage)",
+                        "Speed": "Slow (it shambles forward with terrifying purpose)",
+                        "Attack": `Decay Touch: D6 damage + special`,
+                        "SpecialAbilities": `
+                                <p><b>Decay Touch (Attack):</b>
+                                    <ul>
+                                        <li><b>Damage:</b> 1d6</li>
+                                        <li><b>Special:</b> On a successful hit, the target must succeed on a Toughness DR 14 check or suffer an additional 1 HP of necrotic rot each round. This rot continues until the target passes a Toughness DR 12 check, representing the decay spreading through their flesh.</li>
+                                    </ul>
+                                </p>
+                                <p><b>Corrosion Aura:</b> Within a 5-foot radius, SCP-106 emits a powerful aura of decay, corroding all non-magical objects. Weapons used to strike SCP-106 suffer a -1 penalty to damage after each hit, and armor loses 1 point of protection each round it remains within this aura.</p>
+                                <p><b>Pocket Dimension:</b> Once per encounter, SCP-106 can attempt to drag a victim into its own personal dimension of rot and despair. The target must make an Agility DR 16 check to avoid being pulled in. If they fail, they are transported to a twisted, decaying landscape for 1d4 rounds, taking D4 damage per turn they remain there. Upon returning, they are weakened, taking a -2 to all rolls for the rest of the encounter.</p>
+                                <p><b>Eldritch Evasion:</b> SCP-106 can phase through walls, floors, and barriers, allowing it to pursue targets even through obstacles. Once per round, it may phase through any non-magical barrier within its movement range.</p>
+                                <p><b>Inescapable:</b>If SCP-106 has chosen a target, it will pursue that target relentlessly, ignoring any distractions or other targets until the chosen victim is dead. It cannot be bargained with or persuaded to stop, and only direct intervention or light can halt its pursuit.</p>
+                                `,
+                        "Weakness": `<p>Bright light repels SCP-106. Any source of intense light (such as a Silver Crucifix, Sacred Incense, or fire) forces it to retreat and imposes -1 on all its rolls while within the light. Prolonged exposure deals D4 damage per round as the light disrupts its decaying form.</p>`,
                     }
                 }
             }
@@ -337,6 +387,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A smooth, blood-red stone, warm to the touch and faintly pulsing with an inner light. Known only as The Shifting Stone, this relic has the power to transform those who touch it, altering their physical form in ways that defy reason. The stone’s origins are lost to time, but ancient writings warn that it “shapes flesh to mockery of itself.”`,
                         "Usage": `Activated by direct touch
                             <p><b>Effect:</b>Alters physical form in unpredictable ways</p>`,
                         "SpecialAbilities": `
@@ -378,6 +429,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A strange, metallic tool that seems to change shape depending on the user's intent. It appears as a patchwork of various mechanical and organic parts, shifting fluidly in the hand. Known as The Relic of Restoration, it can repair almost anything broken, from weapons to armor to even flesh and bone, but each repair has a hidden cost.`,
                         "Usage": `Can repair damaged or broken items and heal physical wounds
                             <p><b>Limitations:</b> Each repair introduces a flaw, imperfection, or curse to the repaired item or character</p>
                             `,
@@ -427,6 +479,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `Small, teardrop-shaped creatures with a single, oversized eye that dominates their bodies. SCP-131-A and SCP-131-B, often referred to as “the Eye Pods,” are endlessly curious and have a strong affinity for human companions. They watching everything with an innocent, unwavering gaze, and their presence seems to alert their allies to hidden dangers.`,
                         "HP": 3,
                         "Morale": "12 (the Eye Pods are fearless when protecting or following their allies)",
                         "Armor": "0 (they are small and fragile)",
@@ -457,6 +510,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A hideous, humanoid statue with a twisted, unsettling form. It’s silent, unmoving—until no one is watching. Then it strikes with lethal speed.`,
                         "HP": 16,
                         "Morale": "--",
                         "Armor": "3 (Unyielding stone)",
@@ -477,7 +531,8 @@ const scpData = {
                                     </ul>
                                 </p>
                                 <p><b>Aura of Unease:</b> Any creature within 10 feet of SCP-173 feels a chilling dread. Each round within this range, they must succeed on a Presence DR12 or become distracted, making it harder to keep SCP-173 in view. On a failure, they suffer -1 to all rolls until they move out of range.</p>
-                                `
+                                `,
+                        "Weakness": `<p>Continuous observation prevents movement. Containment procedures involve rotating staff to maintain constant eye contact.</p>`,
                     }
                 }
             }
@@ -495,6 +550,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A figure crackling with barely-contained energy, The Lightning Vessel is a person who has become a conduit for an electrical parasite, allowing them to emit deadly electrical bursts. This power is as much a curse as it is a weapon, inflicting excruciating pain and causing their body to deteriorate with every surge. Those who encounter The Lightning Vessel are as likely to be aided as they are to be struck down by this unstable force.`,
                         "HP": 12,
                         "Morale": "7 (conflicted, wary of their own power)",
                         "Armor": "2 (flesh hardened by electrical burns)",
@@ -505,7 +561,45 @@ const scpData = {
                                 <p><b>Pain Threshold:</b>  Due to their constant state of physical suffering, SCP-213 is highly resistant to pain. They gain +2 to Toughness rolls when resisting effects that would otherwise cause pain or paralysis. However, each time they use their electrical abilities, their body suffers further, leaving them covered in burns, welts, and scars that impose -1 to all Presence rolls as their appearance becomes increasingly unsettling.</p>
                                 <p><b>Self-Destructive Power:</b> Each time SCP-213 uses an electrical ability, roll a d6. On a 1, their control slips entirely, causing them to lose 1 HP from internal damage as the parasite strains their body. This damage cannot be healed conventionally and requires a full day of rest to recover 1 HP.</p>
                                 <p><b>Unstable Ally:</b> SCP-213 can be convinced to aid others but is unreliable in battle, as they struggle to control their own abilities. When asked to use their powers, SCP-213 must roll Morale DR10. On a failure, they refuse, either from fear of harming themselves or others. They may also lash out in a panic if they believe they’re losing control.</p>
-                                `
+                                `,
+                        "Weakness": `<p>Contained by keeping it in an anti-energy field that restricts its powers. Extreme caution is needed due to its ability to annihilate matter.</p>`,
+                    }
+                }
+            }
+        },
+        {//SCP 280
+            "id": "SCP280",//"SCP000"
+            "name": "SCP 280 - Eyes in the Dark",
+            "safety_class": "Keter",
+            "image": "images/SCP-280_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-280 is to be contained in a 5 x 5 meter cell, and no equipment of any kind is to be left inside when staff are not present. Containment area is to be kept in total darkness at all times. Any items taken into the containment cell must be removed by staff at the end of testing, and any staff entering into containment must wear infrared goggles and be equipped with an infrared ID strobe and a strong flashlight.
+                            <p>In the event of an SCP-280 attack, all staff are to power on their flashlights and illuminate the subject under attack. No aggressive action is to be taken against SCP-280, and staff are to keep one meter from SCP-280 at all times. Staff should continue to illuminate SCP-280 until it retreats to a sufficient distance to allow the recovery and extraction of the subject of the attack.</p>`,
+                    "description": `SCP-280 is a black human-shaped mass with two large white eyes on the head and two hands with very long and thin fingers. No feet or legs are visible, as the lower portion of the body appears to fade away several centimeters from the ground. SCP-280 appears to be wholly composed of matter that can gain or lose corporeal form. This matter is very black, with only the eyes showing any other color, and when changing to a non-corporeal form, looks much like smoke.`,
+                    "additional": `<p>The eyes are non-functioning, and appear only when SCP-280 is retreating, appearing to be used like eyespots on some insects. SCP-280 is very strong, and has been observed pulling apart steel with its hands, showing no sign of stress. SCP-280 moves with a gliding motion, with its hands extended, described as a “sleepwalker pose” by observers.</p>
+                            <p>SCP-280 will move slowly towards any human beings and attempt to attack them. SCP-280 appears to sense human life; no limit has yet been found on this ability. SCP-280 will approach to within 14 centimeters of a subject, and then use its hands to pull and tear at the subject, causing massive physical trauma. The attack can last between one and five minutes, and will continue until the death of the subject, at which point SCP-280 will expose its eyes, lose corporeal form, and move to the next human. If no humans are present, SCP-280 will move and ball up against a wall or other structure until a human being is again present.</p>
+                            <p>SCP-280 will retreat slowly from light, exposing its eyes in the direction of the light, or at any nearby humans. This has been described as extremely disconcerting by those who have been stared at. If the area that SCP-280 currently resides in becomes fully illuminated, or there is a very bright burst of light, SCP-280 will fade away and re-appear in another area. This appears to be done purely as a defensive response to light, and will not be used to follow or attack prey.</p>
+                            <p>SCP-280 does not appear to eat, breathe, or sleep. It does not ingest any of the tissue removed during an attack, and simply drops it to tear a new piece. Due to its ability to become incorporeal at will, and its aggressive nature, no samples of SCP-280 have been collected.</p>
+                            `
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A shadowy, amorphous figure with two large, white, glowing eyes, only visible in darkness and drawn toward signs of life and fear.`,
+                        "HP": 15,
+                        "Morale": `12 ("Relentless; it will only retreat if forced into bright light, where it feels exposed and vulnerable")`,
+                        "Armor": " 3 (Shadow Form)",
+                        "Speed": "Fast",
+                        "Attack": `<ul>
+                                    <li><b>Crushing Embrace:</b> When SCP-280 reaches a creature, it envelops them in a suffocating grasp. The target must succeed on a Toughness DR 14 test each round or lose D6 HP from the crushing pressure. On a critical failure, the target suffers an additional 1d4 HP as SCP-280's shadowy mass constricts further.</li>
+                                    <li><b>Shadow Strike:</b> SCP-280 lashes out with shadowy tendrils when close to its target. Attack: DR 12, Damage: D4. Each hit instills dread, imposing -1 on the target’s next roll as fear intensifies.</li>
+                                </ul>`,
+                        "SpecialAbilities": `
+                                <p><b>Hungry Darkness:</b> SCP-280 exists only in darkness, where it is invisible and drawn to sounds, movement, or fearful creatures. It targets the most frightened creature first.</p>
+                                <p><b>Fear Aura:</b> All creatures within 10 feet of SCP-280 must make a Morale DR 12 test at the start of each round. Failure imposes a -1 to all rolls for that round due to overwhelming terror.</p>
+                                <p><b>Shadow Leap:</b> SCP-280 can teleport instantly to any shadowed area within 20 feet once per round. It cannot use this ability in bright light.</p>
+                                `,
+                        "Weakness": `<p>Bright light forces SCP-280 to retreat, dealing it D4 damage per round while exposed. In bright light, it cannot attack or use its special abilities and will seek the nearest shadow to escape.</p>`,
                     }
                 }
             }
@@ -527,6 +621,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A strange, ancient device made of brass and iron, adorned with mysterious symbols and an old, faded keypad with a small slot beneath it. By typing the name of any liquid and pulling the lever, the machine produces a small vial of the requested substance. Its origins are unknown, and it’s unclear if it truly understands the nature of what it produces.`,
                         "Usage": `Can dispense any liquid, once per hour
                                   <p><b>Requirements:</b> Typing a liquid name on the keypad and pulling the lever</p>`,
                         "SpecialAbilities": `
@@ -572,6 +667,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A plain, well-worn ceramic bowl that seems ordinary at first glance. When filled with food, the bowl’s inner surface glows faintly, revealing faint messages that offer comfort or words of wisdom. Those who eat from it feel a strange sense of warmth and reassurance, but the bowl has a way of stirring hidden emotions and memories—both pleasant and painful.`,
                         "Usage": `Can be used to provide physical and emotional healing once per day
                         <p><b>Effect:</b> Eating from the bowl heals wounds and provides mental fortitude, but may also trigger memories or feelings of loss</p>`,
                         "SpecialAbilities": `
@@ -608,6 +704,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A small, ruby-red pill contained within a plain glass vial. When held, it seems to pulse faintly with a warm glow, as if infused with a supernatural life force. Consuming the Crimson Panacea can cure any affliction or wound, and many believe it to be a remnant of divine power—or a dark curse bound in red. Legends speak of its miraculous effects, but few have ever seen one, and fewer still have lived to tell of its true nature.`,
                         "Usage": "Single-use; consuming one pill provides full effects",
                         "SpecialAbilities": `
                                 <p><b>Miraculous Healing:</b> When consumed, the Crimson Panacea instantly heals the user to full HP, closing all wounds and even restoring severed limbs or lost body parts. All physical ailments, including poisons, diseases, and curses, are removed completely, as if they never existed. This effect is immediate and does not require a roll.</p>
@@ -660,6 +757,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A weary, disheveled figure with haunted eyes and a jittery disposition, SCP 507 has the misfortune of being pulled involuntarily into strange, parallel realms. This individual can appear suddenly, sharing tales of bizarre realms and horrors beyond comprehension. Their presence is both a curiosity and a warning of things lurking in alternate realities.`,
                         "HP": 8,
                         "Morale": "8 (frightened but used to strange encounters)",
                         "Armor": "1 (worn jacket, patches of strange materials from other dimensions)",
@@ -716,7 +814,8 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
-                        "SpecialAbilities": `
+                        "Appearance": `A nightmarish disease that twists and mutates anything it infects into masses of writhing, pulsating flesh. Known only as The Flesh Blight, this curse transforms its victims into abominations and spreads like wildfire across flesh, earth, and stone. Those infected are quickly consumed and remade into monstrous, distorted versions of their former selves, all driven by a mindless desire to spread the infection. Entire regions have been overrun by The Flesh Blight, their landscapes transformed into living nightmares.`,
+                        "Other": `
                                 <p><b>The Flesh Blight Infection:</b> The Flesh Blight is a highly contagious infection that can spread through physical contact or prolonged proximity to infected terrain or creatures.
                                     <ul>
                                         <li><b>Effect:</b> Each time a character touches infected flesh or spends more than 10 minutes in an area corrupted by The Flesh Blight, they must roll Toughness DR14. On a failure, they are infected and begin to show symptoms within 1d4 hours.</li>
@@ -756,7 +855,8 @@ const scpData = {
                                         <li><b>Effect:</b> Any item or weapon used on an infected creature has a chance (Presence DR10) of becoming contaminated and will spread the infection if used on another creature without cleaning.</li>
                                     </ul>
                                 </p>
-                                `
+                                `,
+                        "Weakness": `<p>High temperatures and fire are effective in containing and eliminating infected tissue.</p>`,
                     }
                 }
             }
@@ -779,6 +879,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A small, ornately crafted silver bell, engraved with delicate patterns that glint in the dimmest light. When rung, a well-dressed man with an air of quiet efficiency—known only as “Mr. Deeds”—appears as if from thin air, ready to serve the ringer with utmost courtesy. Mr. Deeds can fulfill many requests, but his abilities seem bound by certain rules and limitations that even he cannot explain.`,
                         "Usage": `Ring to summon Mr. Deeds once per day
                             <p><b>Limitations:</b> Requests for violence allowed, but often with conditions or unexpected outcomes</p>`,
                         "SpecialAbilities": `
@@ -831,6 +932,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A well-crafted 13-inch chef’s knife with a slightly tarnished blade and an ominous, crimson-stained handle that never quite loses its hue, no matter how often it’s cleaned. Known as The Blood-Soaked Blade, this weapon is said to have a mind of its own, urging its wielder to use it in the most brutal ways possible. Wielding this blade gives immense power, but it brings a thirst for blood that is difficult to control.`,
                         "HP": 0,
                         "Morale": 0,
                         "Armor": "",
@@ -878,6 +980,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `The Death Reptile is a colossal, ancient creature, with scales that shift color to match its surroundings and a body covered in scars from countless battles. This beast is a symbol of rage and resilience, adapting to every threat it faces and regenerating from almost any injury. Its loathing for life drives it to attack indiscriminately, destroying anything in its path. It cannot be killed by conventional means, and its regenerative abilities allow it to return even from seemingly fatal wounds.`,
                         "HP": "50 (Unkillable)",
                         "Morale": "Immune (relentless hatred of all life)",
                         "Armor": "4 (resilient, rapidly regenerating scales)",
@@ -909,7 +1012,8 @@ const scpData = {
                                     </ul>
                                 </p>
                                 
-                                `
+                                `,
+                        "Weakness": `<p>Very difficult to kill, although exposure to acids and high-damage attacks can temporarily disable it. Permanent termination has proven unsuccessful.</p>`,
                     }
                 }
             }
@@ -928,6 +1032,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A set of exquisitely crafted objects, each bearing an eerie, otherworldly allure. Rumored to have belonged to a powerful sorcerer, these objects carry a dreadful curse, compelling anyone who uses them to obsession and self-destruction. While each object offers a small benefit, its power comes with the cost of one’s sanity.`,
                         "Usage": `Each item can be used individually; each induces specific compulsions or curses
                                 <p><b>Warning:</b> Characters feel an eerie draw to use the items, despite a sense of foreboding</p>`,
                         "SpecialAbilities": `
@@ -981,6 +1086,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A massive, intricate machine of unknown origin, covered in brass gears, iron cogs, and strange levers. It hums faintly with a sense of dormant power, waiting for something—or someone—to be placed inside. Etched near its levers are words in an ancient tongue: Rough, Coarse, 1:1, Fine, and Very Fine. None can say for sure what will emerge on the other side.`,
                         "Usage": "Activated by placing an item (or creature) inside and selecting a setting",
                         "SpecialAbilities": `
                                 <p><b>Rough:</b> 
@@ -1080,6 +1186,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `Sleek, red-skinned creatures with emaciated frames and tooth-filled maws. They are silent hunters, moving without a sound, and capable of imitating voices they’ve heard to lure victims closer. Those who hear their voices rarely live to tell the tale.`,
                         "HP": 10,
                         "Morale": 10,
                         "Armor": "1 (Thick, rubbery hide)",
@@ -1100,7 +1207,8 @@ const scpData = {
                                         <li>Special: On a successful hit, the target must make a Toughness DR12 or suffer intense blood loss, taking 1 additional damage at the end of each round until they receive first aid or magical healing.</li>
                                     </ul></p>
                                 <p><b>Hallucinogenic Exhalation:</b> SCP-939 exhales a subtle, hallucinogenic gas that affects those within 10 feet. Characters within range must make a Toughness DR10 each round. On a failure, they suffer -1 to all rolls due to disorientation and may experience brief hallucinations (such as seeing SCP-939 as an ally or hearing false sounds).</p>
-                               `
+                               `,
+                        "Weakness": `<p>Isolated containment and ignoring vocal lures can prevent incidents. Avoiding auditory exposure to its mimicking abilities reduces risk.</p>`,
                     }
                 }
             }
@@ -1122,6 +1230,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A playful, amorphous orange blob that seems perpetually joyful and eager for companionship. SCP-999’s body is soft, gelatinous, and emits a pleasant scent tailored to each individual’s favorite smells. In the bleak, cruel world of Mörk Borg, SCP-999 stands as a rare beacon of comfort, laughter, and healing.`,
                         "HP": 12,
                         "Morale": "12 (SCP-999 will never abandon or harm anyone intentionally)",
                         "Armor": "0 (soft and squishy)",
@@ -1154,6 +1263,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A heavy, leather-bound tome with a cracked and ancient cover. Faint runes cover its spine and edges, with symbols of death, decay, and suffering. Known by some as The Malignant Codex, this cursed encyclopedia holds the knowledge of a thousand afflictions—diseases, curses, and maladies that have ravaged humanity since the dawn of time. But beware, for merely reading its pages can summon sickness upon the reader.`,
                         "Usage": `Unlimited, but dangerous <p><b>Effect:</b> Causes ailments based on the page read</p>`,
                         "SpecialAbilities": `
                                 <p><b>Curse of Contagion:</b> Any creature that opens The Malignant Codex and reads a page must roll a Presence DR12 to resist the book’s curse. On a failure, they develop the symptoms of the disease or affliction described on the page they read. The book seems to "sense" the reader’s weaknesses, often presenting diseases that would affect them most severely. If the disease has no immediate effect, it may manifest as a slow, creeping illness over the course of several days.</p>
@@ -1188,6 +1298,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A weathered gas mask with a dark, cracked visor. When donned, the user is transported to a grim, twisted alternate dimension filled with bizarre, hostile creatures and a desolate landscape. In this dimension, time and reality warp, and the wearer’s only option is to survive long enough to remove the mask and return to their original plane. This mask is both a possible escape and a ticket to a dark, haunted world.`,
                         "Usage": `When worn, transports the wearer to an alternate, hostile dimension 
                                 <p><b>Limitations:</b> Use at your own risk; may be difficult to remove once worn</p>`,
                         "SpecialAbilities": `
@@ -1217,7 +1328,8 @@ const scpData = {
                                 <p><b>Difficulty Removing the Mask:</b> Once in the alternate realm, removing the mask is not always easy. The wearer must roll Presence DR12 to remove it; on a failure, they feel as if the mask has fused to their face and cannot remove it for another d6 minutes. Each failed attempt increases their sense of panic and dread.</p>
                                 <p><b>Mental Strain:</b> Each time the wearer enters the other realm, they must roll Toughness DR14 upon returning. On a failure, they suffer disturbing visions and intrusive thoughts for the next 24 hours, imposing -1 to all Presence rolls as they struggle to shake off the feeling of being watched or stalked.</p>
                                 <p><b>Temporary Escape or Strategic Maneuver:</b> In desperate situations, the mask allows the user to avoid immediate threats by briefly shifting to the other realm. They can also use it to pass obstacles (like closed doors or blocked paths) if the alternate version of the area has a clear path. However, the risk of encountering hostile entities makes this a dangerous gamble, as re-entering reality in a different location may still require escaping from an ambush on either side.</p>
-                                `
+                                `,
+                        "Weakness": `<p>Removing the mask immediately brings the user back to reality, neutralizing the threat.</p>`,
                     }
                 }
             }
@@ -1242,6 +1354,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `Within a desolate forest, untouched by human hands for centuries, there dwell two ancient spirits known as the Fair Folk. They appear as fleeting visions, beautiful yet unsettling, their laughter echoing through the trees. The Fair Folk offer assistance to those who seek it, but always at a cost. Their rules are binding, and woe to those who break them.`,
                         "Usage": `Neutral to hostile, depending on respect shown by intruders
                             <p><b>Abilities</b> Reality-warping powers, deals and bargains</p>`,
                         "SpecialAbilities": `
@@ -1296,6 +1409,48 @@ const scpData = {
                 }
             }
         },
+        {//SCP 1981
+            "id": "SCP1981",//"SCP000"
+            "name": "SCP 1981 - The Haunted Tape",
+            "safety_class": "Safe",
+            "image": "images/SCP-1981_img.jpg", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-1981 is to be kept inside a secure video storage unit at the media archive of Site ██. When in use, SCP-1981 should not be removed from its casing or exposed to any strong magnetic sources. A Betamax home video system and an analog television has been provided in Observation Theatre 02 at Site ██, as well as video equipment to record viewings.`,
+                    "description": `SCP-1981 is a standard Betamax tape. "RONALD REGAN CUT UP WHILE TALKING"(sic) has been handwritten on the adhesive sticker in felt tip pen. Laboratory analysis indicates that SCP-1981 is made of ordinary material, and serial numbers correspond with home cassette tapes produced in September of 1980. SCP-1981 was initially encountered by a filing clerk in the Ronald Reagan Presidential Library in 1991, who upon watching it alerted the police, with the intent to find the tape's creator to press "obscenity charges". A low-level police investigation was conducted, at which point the Foundation was alerted and secured SCP-1981. Class A amnestics were administered before █████ could be notified. Further investigation of the library's records by Foundation personnel failed to yield any leads on SCP-1981's origin.`,
+                    "additional": `<p>SCP-1981 appears to be a home video recording of former United States President Ronald Reagan delivering his "Evil Empire" speech to the National Association of Evangelicals at Sheraton Twin Towers Hotel, Orlando, FL on 3/8/1983. However, at 1 minute and 10 seconds, the speech begins to deviate heavily, eventually resembling no known speech ever made by Reagan. Beginning at approximately 5 minutes, multiple incisions, lacerations and penetration wounds can be seen being slowly inflicted, though no corresponding source of these wounds is visible. Despite suffering bodily harm that would likely incapacitate an ordinary person, Reagan will continue to deliver his speech until either his vocal cords are severed or the tape degrades to static at 22:34.</p>
+                                <p>Upon rewinding SCP-1981 and initiating playback, Reagan will deliver an entirely new speech, often radically different from the ones previously observed. Topics have included torture, child molestation and ritual sacrifice. Trauma inflicted upon Reagan also appears to be divergent, with impalement, genital mutilation, and [REDACTED] having all been observed. In roughly one in seven viewings of SCP-1981, a figure clothed in black robes with a conical hood will have replaced a random member of Reagan's press detail, henceforth referred to as SCP-1981-1. The significance of the appearance of SCP-1981-1 is currently unknown.</p>
+                                <p>The speeches delivered by Reagan are mostly incoherent, lacking any sort of underlying thematic structure and largely being composed of nonsensical anecdotes and parables. However, occasionally references are made to future events that Reagan could not possibly have known about or predicted, such as the September 11 terrorist attacks, the result of the 2008 Russian elections, and █████ ██████████. For this reason, rigorous time and effort has been devoted to recording the speech delivered on each playback. Attempts to replicate SCP-1981 onto a similar Betamax tape have met with failure, however, cameras used to record the television SCP-1981 is broadcasted on have succeeded in "capturing" individual playbacks. Any observations performed on SCP-1981 must be recorded on the camcorder provided, and delivered for subsequent review to Dr. B█████, project supervisor.</p>
+                                <p>Years of natural magnetic interference have severely degraded SCP-1981's signal quality, making it even more difficult to sift meaningful information from playbacks. Additionally, the gruesome nature of the mutilations performed upon Reagan has been described as "extremely disturbing", and for this reason it is recommended that any personnel feeling squeamish or ill after playback visit the on-site psychiatry facility for a level 3 evaluation.</p>
+                                <p>As Ronald Reagan was alive at the time of SCP-1981's containment, a surveillance net was deployed to establish any relation between him and SCP-1981. No known connection was developed, though Reagan would frequently complain about "nightmares" before his mental state degenerated due to Alzheimer's.</p>`
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A warped, decaying VHS tape with "Reagan Cut Up While Talking" scrawled in permanent marker. The label is scratched and unreadable, except for these words. It gives off a faint aura of dread.`,
+                        "Usage": `Viewing the tape induces horrifying visions and mental distress.`,
+                        "Other": `
+                            <p><b>Activation:</b> When the tape is inserted into any playback device (if it even works), the viewer is immediately hypnotized by the grim monologue that begins. Ronald Reagan appears on the screen, his face distorted, speaking in fragmented sentences predicting apocalyptic events.</p>
+                            <p><b>Prophetic Doom:</b> Viewers that survive must make a Presence DR 12 check. Success grants a fleeting vision of the future, lowering their next check by -1 DR. Failure results in a horrifying vision of their death, imposing -1 to all rolls for the next 1d4 hours as dread consumes them.</p>
+                            <p><b>Reagan's Wrath:</b> The tape randomly shifts to show Reagan’s mutilated face, seemingly directing his anger at the viewer. The viewer must make a Morale Check DR 10 or become paralyzed in fear for 1d4 turns. During this time, their screams may attract nearby enemies or other cursed entities.</p>
+                        <p><b style="text-decoration: underline; font-size: x-large;">"The Wraith of Reagan"</b> 
+                            <ul>
+                                <li><b>HP:</b> 10</li>
+                                <li><b>Morale:</b> 10</li>
+                                <li><b>Armor:</b> 2 (Intangible Form)</li>
+                                <li><b>Attack</b> Whisper of Ruin – D6 damage, ignores armor (psychic damage).</li>
+                                <li><b>Special Abilities:</b>
+                                    <ul>
+                                        <li><b>Voice of Prophecy:</b> Each time it attacks, the Wraith reveals a disturbing prophecy about the player’s fate. This prophecy gives a -1 DR to all rolls for the next 1d6 turns as doubt and dread plague the victim.</li>
+                                        <li><b>Cut Up While Talking:</b> On every odd turn, the Wraith’s form glitches and contorts, duplicating itself for a single round. During this turn, it attacks twice. This ability has a 1-in-6 chance of causing madness to any onlookers (Presence DR 14 or lose 1d4 Presence for the session).</li>
+                                        <li><b>Mortal Mockery:</b> If slain, the Wraith dissipates with an echo of Reagan’s voice delivering a final, cryptic message. All creatures within earshot make a Toughness DR 12 check or lose 1 HP from sheer terror.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            `,
+                    }
+                }
+            }
+        },
         {//SCP 2316
             "id": "SCP2316",
             "name": "SCP 2316 - Bodies in the water",
@@ -1313,6 +1468,7 @@ const scpData = {
                 },
             "Mork Borg": {
                 "stats": {
+                    "Appearance": `A mist-laden lake, dark and still. Shapes drift beneath the surface—unfamiliar yet hauntingly familiar faces. Those who approach the lake hear voices calling, begging for recognition. Those who answer are drawn into the water, and few return.`,
                     "Other": `
                             <p><b>You Do Not Recognize the Bodies in the Water:</b> When characters approach the lake, they begin to see bodies in the water that look eerily familiar—friends, family, or companions lost along the journey. Each character must make a Presence DR14. On a failure, they believe they recognize the bodies and hear a voice calling for help, begging them to come closer. Characters who fail this check are drawn closer to the lake, losing control over their actions and risking submersion.</p>
                             <p><b>Compulsion to Enter:</b> Characters who have failed the Presence check must make a Toughness DR12 each round to resist entering the water. On a failure, they move closer to the lake, walking into the water until they are submerged. Once submerged, they are considered lost unless rescued by other players or by some miraculous intervention. Characters who disappear beneath the lake are not seen again.</p>
@@ -1320,8 +1476,60 @@ const scpData = {
                             <p><b>Hallucinations of the Drowned:</b> Characters who look directly at the bodies in the lake for more than one round must succeed on a Toughness DR16. On a failure, they suffer a temporary loss of identity and believe they belong in the lake with the bodies, abandoning their purpose and feeling an overwhelming desire to join the drowned. This effect lasts until they are forcibly removed from the lakeside or something shocks them out of the trance (such as taking damage or witnessing a holy symbol).</p>
                             <p><b>Reflection of Lost Memories:</b> If a character has experienced a traumatic or deeply sorrowful event, they will see this event reflected in the lake’s surface. Characters experiencing this must succeed on a Presence DR14 or be overcome by grief and despair, suffering -1 to all rolls for the rest of the day as the lake dredges up their painful memories.</p>
                             <p><b>Lure of Familiar Faces:</b> The lake can sense characters’ past relationships and lost loved ones, creating illusions of familiar faces and voices. Each character must succeed on a Presence DR12 every time they approach the lake; on a failure, they see a loved one among the bodies, causing them to hesitate or call out to the figures. Each failed check brings the character closer to the lake’s edge, where they risk falling under the spell of the Compulsion to Enter.</p>
-                            `
+                            `,
+                    "Weakness": `<p>Avoiding direct engagement with SCP-2316's effects and using amnestic treatments to prevent compulsive urges.</p>`,
                 }
+                }
+            }
+        },
+        {//SCP 2800
+            "id": "SCP2800",//"SCP000"
+            "name": "SCP 2800 - Cactusman",
+            "safety_class": "Safe",
+            "image": "images/SCP-2800_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `<p>SCP-2800 is to be contained in a modified standard humanoid containment chamber that features a large sun lamp. SCP-2800's hero syndrome and dysthymia are to be regularly monitored by psychologists.</p>
+                            <p>When possible, SCP-2800 is to be given menial tasks where it can assist others while under close supervision. It has been deemed by staff psychologists that allowing SCP-2800 to assist in these tasks has significantly improved its morale and general disposition.</p>
+                            <p>Regular psychological counseling and monitoring for self harm is recommended for SCP-2800. SCP-2800 has also been placed on suicide watch.</p>`,
+                    "description": `SCP-2800 is an anomalous male of Scottish descent, formerly known as Daniel MacIntyre, though SCP-2800 refers to itself as "Cactusman, the Spiked Menace." SCP-2800 measures 187 cm and 76 kg, and possesses brown hair and green eyes.`,
+                    "additional": `<p>SCP-2800 possesses an expanded genome that contains DNA from the saguaro cactus. SCP-2800 also has many anomalous characteristics that are consistent with the natural physical properties of the Carnegiea gigantea plant, more commonly known as the saguaro cactus.</p>
+                            <p>SCP-2800 has demonstrated the following anomalous capacities:
+                                <ul>
+                                    <li>The anomalous capacity to instantaneously grow 2-3 cm spines from all surfaces of its body. The spines fall off naturally, though SCP-2800 can also voluntarily detach these spines.</li>
+                                    <li>The anomalous capacity to perform crassulacean acid metabolism photosynthesis. SCP-2800 can open pores on its body to function in a manner similar to stomata.</li>
+                                    <li>The anomalous capacity to use water in a hyper-efficient manner. SCP-2800 can subsist on roughly 1/3 the amount of water needed for an average male of its height and build. SCP-2800 produces roughly 1/5 the urea that a normal human of its height, build and diet would normally produce. It is currently hypothesized that SCP-2800 is able to store wastes such as ammonia in its body, in a manner similar to other plants. SCP-2800 is also capable of excreting waste through its pores, but describes this process as uncomfortable.</li>
+                                    <li>The anomalous capacity to tolerate above average temperatures and above average aridity. SCP-2800 possesses an extremely efficient cooling mechanism that prevents it from overheating easily. In addition, SCP-2800 has demonstrated its ability to prevent its skin from drying out.</li>
+                                    <li>Empathic connections with other members of the Cactaceae family. Through testing, it has been demonstrated that SCP-2800's metabolic rate increases significantly while it is communicating with cacti. Said cacti are noted to increase water and nutrient absorption from the soil they are planted in while SCP-2800 is communicating with them. SCP-2800 has been able to communicate with SCP-3388 without a cell phone and SCP-2497 without the standard light code.</li>
+                                </ul>
+                            </p>
+                            <p>SCP-2800 has been diagnosed with several mental disorders, including dysthymia (chronic depression), and hero syndrome. SCP-2800 expresses an extreme desire to assist others, and intervene in situations, even if it is incapable of rendering any form of assistance in such situations.</p>
+                            <p>SCP-2800's inability to assist in many situations is believed to have been a cause of its dysthymia. SCP-2800 has expressed frustration in many cases due to its self-perceived inability to provide useful function to others, and has attempted self-harm in the past.</p>
+                            <p>SCP-2800 was captured by the Foundation while the organization was attempting to track and contain a reality-bending SCP object that had breached containment. SCP-2800 was found attempting to assault the escaped SCP object, although this proved largely ineffective. After the containment breach was resolved, the Foundation convinced SCP-2800 to be contained.</p>
+                            <p>SCP-2800 has been provided a number of potted cacti, after its request for them was approved by psychological staff, on the grounds of improving SCP-2800's morale.</p>`
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A towering humanoid cactus with thick, thorny limbs and a "heroic" stance. It proclaims itself a protector of the weak, though its antics and lack of control make it as dangerous as it is well-meaning.`,
+                        "HP": `12`,
+                        "Morale": `10 ("Bold and overconfident; will only retreat if near death")`,
+                        "Armor": "2 (Thick, thorn-covered skin)",
+                        "Speed": "Normal",
+                        "Attack": `Thorn Barrage: 1d6+1 damage + special`,
+                        "SpecialAbilities": `
+                                <p><b>Thorn Barrage (Attack):</b>
+                                    <ul>
+                                        <li><b>Damage:</b> 1d6</li>
+                                        <li><b>Special:</b> On a successful hit, the target must pass an Agility DR 12 or suffer 1 HP of bleeding damage each round due to embedded cactus spines. This effect continues until the target passes an Agility DR 10 check to remove the thorns.</li>
+                                    </ul>
+                                </p>
+                                <p><b>Photosynthetic Recovery:</b> If SCP-2800 is exposed to sunlight, it regenerates D4 HP at the start of each turn. This ability is negated in dark or underground environments, where SCP-2800 instead suffers -1 to all rolls.</p>
+                                <p><b>Heroic Posturing:</b> Whenever SCP-2800 sees an “enemy,” it loudly proclaims itself a hero and strikes a heroic pose, forcing all enemies within earshot to make a Morale DR 10 check. On a failure, enemies hesitate in confusion or disbelief, giving SCP-2800 an additional turn to attack or reposition itself.</p>
+                                <p><b>Self-Declared Nemesis:</b> SCP-2800 picks a “villain” (usually the first character to attack it or anyone dressed ominously) and gains a +1 bonus to all attack rolls against that target until they are defeated. SCP-2800 will relentlessly pursue this “nemesis” until it believes justice has been served.</p>
+                                `,
+                        "Weakness": `<p><b>Fire Vulnerability:</b> SCP-2800’s plant-based body is highly flammable and takes double damage from fire-based attacks. If it takes fire damage, it loses the ability to use Photosynthetic Recovery for the remainder of the encounter.</p>
+                                    <p><b>Water Absorption:</b> If SCP-2800 is doused in water, it swells and becomes sluggish, reducing its speed to Slow and imposing -2 on all Agility-based rolls for the next 1d4 rounds.</p>`,
+                    }
                 }
             }
         },
@@ -1340,6 +1548,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A desolate, eerie cave leads to a place known as The Silent World. Those who enter find themselves in a mirror of their own world, but it is a dead land, completely devoid of life. This realm is haunted by a deadly, unseen force—The Deathly Silence—that instantly kills any living creature it touches. The Silent World is a place of shadows and whispers, and only the foolish or the desperate venture within, knowing that one misstep could mean eternal silence.`,
                         "Other": `
                                 <p><b>The Deathly Silence:</b> The Silent World is pervaded by a powerful force known as the Deathly Silence, which instantly kills any living thing it comes into contact with.
                                     <ul>
@@ -1434,6 +1643,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `An endless, shifting labyrinth of furniture, shelving, and lighting that resembles an impossibly large IKEA store. Those who enter find themselves unable to leave, as the aisles extend infinitely in all directions. Signs are unhelpful or misleading, and the sound of shuffling feet echoes constantly through the endless halls. Occasionally, the staff appear, faceless and relentless, to enforce the "rules" of the store.`,
                         "Other": `
                                 <p><b>Shifting Aisles:</b> The maze constantly shifts and rearranges itself, making it almost impossible to navigate. Every hour, roll a d6:
                                 <ul>
@@ -1510,6 +1720,7 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
+                        "Appearance": `A towering, skeletal figure with pale, frostbitten skin and eyes like burning embers. It appears exclusively during winter, stalking families in isolated rural homes with young children. The Fiend’s presence brings disturbing sights and sounds, escalating over twelve nights until it either slaughters the family or leaves disturbing “gifts” crafted from human remains.`,
                         "HP": "∞ (Unkillable)",
                         "Morale": "Immune (never retreats)",
                         "Armor": "3 (resilient, ice-bound flesh that seems impervious to decay or damage)",
@@ -1573,10 +1784,7 @@ const scpData = {
 
 
 
-//SCP-1981
-//SCP-280
-//SCP-106
-//SCP-2800
+
 //SCP-1678
 //SCP-035
 //SCP-447
@@ -1602,6 +1810,7 @@ const scpData = {
                 },
                 "5th Edition": {
                     "stats": {
+                        "Appearance": ``,
                         "HP": 0,
                         "AC": 0,
                         "Speed": "30 ft",
@@ -1622,6 +1831,7 @@ const scpData = {
                 },
                 "Fallout": {
                     "stats": {
+                        "Appearance": ``,
                         "HP": 0,
                         "Stamina": 0,
                         "ArmorClass": 0,
@@ -1644,8 +1854,9 @@ const scpData = {
                 },
                 "Mork Borg": {
                     "stats": {
-                        "HP": 0,
-                        "Morale": 0,
+                        "Appearance": ``,
+                        "HP": ``,
+                        "Morale": ``,
                         "Armor": "",
                         "Speed": "",
                         "Attack": ``,
@@ -1653,7 +1864,8 @@ const scpData = {
                         "Other": ``,
                         "SpecialAbilities": `
                                 <p><b>Name:</b> description</p>
-                                `
+                                `,
+                        "Weakness": `<p><b>Name:</b> description</p>`,
                     }
                 }
             }
@@ -2320,8 +2532,6 @@ const scpData = {
 };
 
 
-
-
 // Function to generate the SCP or playable list dynamically based on selected format and player type
 function generateSCPList() {
     const listContainer = document.getElementById('scpList');
@@ -2337,6 +2547,12 @@ function generateSCPList() {
         dataList = scpData.scps;
     } else if (playerSelector.value === "playable") {
         dataList = scpData.playable;
+    }
+
+    // Check if dataList exists and is not empty
+    if (!dataList) {
+        console.error("Data list not found for selected player type.");
+        return;
     }
 
     // Sort SCP list by numerical ID if displaying SCPs (not playable characters)
@@ -2408,6 +2624,7 @@ function openPopup(item, format) {
             const stats = item.info["5th Edition"].stats;
             content += `
                 <div>
+                    ${stats.Appearance ? `<p>${stats.Appearance}</p>` : ''}
                     ${addStat("HP", stats.HP)}
                     ${addStat("AC", stats.AC)}
                     ${addStat("Speed", stats.Speed)}
@@ -2428,6 +2645,7 @@ function openPopup(item, format) {
             const stats = item.info["Fallout"].stats;
             content += `
                 <div>
+                    ${stats.Appearance ? `<p>${stats.Appearance}</p>` : ''}
                     ${addStat("HP", stats.HP)}
                     ${addStat("Stamina", stats.Stamina)}
                     ${addStat("Armor Class", stats.ArmorClass)}
@@ -2446,14 +2664,16 @@ function openPopup(item, format) {
             const stats = item.info["Mork Borg"].stats;
             content += `
                 <div>
+                    ${stats.Appearance ? `<p>${stats.Appearance}</p>` : ''}
                     ${addStat("HP", stats.HP)}
                     ${addStat("Morale", stats.Morale)}
                     ${addStat("Armor", stats.Armor)}
                     ${addStat("Speed", stats.Speed)}
-                    ${addStat("Attack", stats.Attack)}
+                    ${stats.Attack ? `<p><b>Attack:</b> ${stats.Attack}</p>` : ''}
                     ${addStat("Usage", stats.Usage)}
                     ${stats.Other ? `<p>${stats.Other}</p>` : ''}
                     ${stats.SpecialAbilities ? `<p><h4>Special Abilities:</h4> ${stats.SpecialAbilities}</p>` : ''}
+                    ${stats.Weakness ? `<p><h4>Weaknesses</h4>${stats.Weakness}</p>` : ''}
                 </div>
             `;
         } else {
@@ -2514,6 +2734,21 @@ function addStat(label, value) {
     return value ? `<p><b>${label}:</b> ${value}</p>` : '';
 }
 
+// Function to update the header text based on the selected format and player type
+function updateHeaderText() {
+    const format = document.getElementById("TTRPG_Format").value;
+    const player = document.getElementById("TTRPG_player").value;
+    const headerText = document.getElementById("headerText");
+
+    if (format === "Mork Borg" && player === "playable") {
+        headerText.textContent = "List of Classes:";
+    } else if ((format === "5th Edition" || format === "Fallout") && player === "playable") {
+        headerText.textContent = "List of Backgrounds:";
+    } else {
+        headerText.textContent = "List of SCP's:";
+    }
+}
+
 // Function to save the selected TTRPG format in localStorage
 function saveSelectedFormat() {
     const formatSelector = document.getElementById("TTRPG_Format");
@@ -2531,7 +2766,7 @@ function loadSelectedFormat() {
     }
 }
 
-// Modified function to handle the change, save the selected format, and regenerate the list
+// Modified function to handle the change, save the selected format, regenerate the list, and update the header text
 function toggleFields() {
     saveSelectedFormat(); // Save the selection whenever it changes
 
@@ -2551,12 +2786,12 @@ function toggleFields() {
         playerForm.style.display = "block";
     }
 
+    updateHeaderText(); // Update the header text based on the current selections
     generateSCPList(); // Regenerate the list based on the new format and player type
 }
 
-// Event listener to load the list and the saved format when the page loads
+// Event listener to load the list, saved format, and update header text when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     loadSelectedFormat(); // Load the saved TTRPG format on page load
-    toggleFields(); // Ensure playerForm visibility and generate list
+    toggleFields(); // Ensure playerForm visibility, update header text, and generate list
 });
-

@@ -9,7 +9,7 @@
 
 <body>
     <h1 class="container">
-        <img src="images/scp_logo.png" class="logo"> SCP Creatures
+        <img src="images/scp_logo.png" class="logo"> SCP RPG
         <form id="creatureForm">
             <select id="TTRPG_Format" name="TTRPG_Format" required onchange="toggleFields()">
                 <option style="font-weight: bold;" value="">Select</option>
@@ -27,7 +27,7 @@
         </form>
     </h1>
     <div class="container">
-        <h2>List of SCP's:</h2>
+        <h2 id="headerText">List of SCP's:</h2>
         <div id="scpList"></div>
     </div>
     <script src="load_scp_data.js" defer></script>
