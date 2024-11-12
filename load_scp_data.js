@@ -1,5 +1,54 @@
 const scpData = {
     "scps": [
+        {//SCP 003
+            "id": "SCP003",//"SCP000"
+            "name": "SCP 003 - Biological Motherboard",
+            "safety_class": "Euclid",
+            "image": "images/SCP-003_img.jpeg", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-003 is to be maintained at a constant temperature of no less than 35°C and ideally kept above 100°C. No living multicellular organisms of Category IV or higher complexity may be allowed to come into contact with SCP-003.
+                            <p>In event of total power failure, if SCP-003-1 begins to increase its mass, assigned personnel must engage in skin contact with SCP-003-1. Ideally, personnel may use their body heat to return SCP-003-1 to above the critical temperature; however, skin contact must be maintained even in event of SCP-003 reaching activation temperature, lasting at minimum until SCP-003-1 advances fully to its second growth stage.</p>
+                            <p>Personnel who enter SCP-003's containment area must first be examined for body parasites of Category IV or higher complexity, and sterilized if such organisms are present. All personnel who have come in physical contact with SCP-003-1 are to immediately report for sterilization afterwards.</p>
+                            <p>SCP-003-1 must not be removed from SCP-003-2 except in case of emergency procedures detailed above. Any significant change in SCP-003-2's rune activity (including pattern, frequency, or color) should be reported within three (3) hours of occurrence. Cessation of rune activity must be reported immediately. SCP-003-2 must be supplied with power via the source designated Generator 003-IX at all times.</p>`,
+                    "description": `SCP-003 consists of two related components of separate origin, referred to as SCP-003-1 and SCP-003-2.`,
+                    "additional": `<p>SCP-003-1 appears to be composed of chitin, hair, and nails of unknown biology, arranged in a configuration similar to that of a computer motherboard. Testing reveals SCP-003-1 to predate earliest known circuit boards by a factor of thousands of years. SCP-003-1 is considered sentient but not actively dangerous except under certain conditions.</p>
+                            <p>SCP-003-1 was found on a stone tablet, SCP-003-2, on which it currently resides. The runes on SCP-003-2 are not part of any known language, and emit pale, flickering light patterns.</p>
+                            <p>SCP-003-2 is controlled by a (non-biological) internal computer, the contents of which are mostly inaccessible without risk of damaging SCP-003-2. SCP-003-2 is capable of controlled emissions of radiation, including heat, light, and anomalous radiation types. SCP-003-2 contains an internal power source of an anomalous nature, which appears to have been losing power since several centuries before discovery.</p>
+                            <p>It is considered probable that SCP-003-2 was created for the purpose of containing SCP-003-1. Partially interpreted data recovered from SCP-003-2 may refer to a past and/or potential future LK-class restructuring event caused by SCP-003-1.</p>
+                            <p>SCP-003 was located by remote viewing team SRV-04 Beta. It appears possible that SRV-04 Beta was deliberately contacted by SCP-003-2. Other organizations have also been alerted to SCP-003's existence, possibly by similar means. Despite this activity, SCP-003-2 does not appear to be sentient, based on its lack of reaction to M03-Gloria analysis and procedures.</p>
+                            <p>When SCP-003 drops below the temperature of 35°C, both components react.</p>
+                            <p>First, SCP-003-1 enters a growth state characterized by an exponential increase in mass. This growth state consists of two stages. In both stages, SCP-003-1 partially fuels its growth by converting matter around it, starting with any surrounding inorganic material, including atmospheric elements, then nonliving organic material, including cells of dead skin, hair, chitin, enamel, keratin, and other biological materials.</p>
+                            <p>The first stage is always the same. SCP-003-1 will first increase its mass, then take a form similar in shape to an ophiuroid (brittle star) of fifteen meters in diameter (including what appears to be a central processor of three meters in diameter). It will form sensory organs that appear to scan its surrounding environment, and will partially convert the area around it to an unidentified anomalous substance (SCP-003-2 seems immune from conversion).</p>
+                            <p>The second stage describes a growth alteration which occurs when SCP-003 comes into contact with living organic material; SCP-003 appears to "template" itself off of the organic material, and will attempt communication with organisms that match its initial "template" or "templates".</p>
+                            <p>In its second stage, SCP-003-1 may pause, slow or change its growth, and will also convert inorganic and nonliving organic elements into functionally similar structures while anomalously altering their physical makeup.</p>
+                            <p>While growth is consistent in the first stage, in the second stage SCP-003-1's growth rate is diminished by 20-90% so long as SCP-003-1 remains in contact with living organic material. The percentage is determined by the complexity of the organism(s) in contact with SCP-003-1; SCP-003-1 appears to devote a large amount of processing power to analysis of living organic material.</p>
+                            <p>During each of SCP-003-1's growth stages, SCP-003-2 releases bursts of radiation that temporarily inhibit SCP-003-1's growth, or reverse this growth when the temperature of SCP-003-1 rises above 100°C. Similar radiation emissions have been replicated or recorded via other anomalous means.</p>
+                            <p>SCP-003-1's biology has been the subject of extensive study. Significant elements have been identified similar to SCP-███, SCP-1512, and SCP-2756, the latter two of which have no further confirmed connection with SCP-003-1 and no known connection with each other, and none of which are fully understood (technically, even less understood than SCP-003, thanks to the extensive cross-disciplinary research on the SCP-003 objects). To date, no convincing analysis has been put forward which satisfactorily explains SCP-003-1's connection to these SCP objects or others, nor its connection to modern technology beyond appearance (and potential mimicry via unknown mechanism).</p>
+                            `
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A large, pulsing, organic mass that resembles a motherboard made of flesh and circuitry. Normally stable when cooled, if SCP-003-1 begins to overheat, it enters an aggressive growth phase, rapidly consuming and integrating surrounding organic matter. This entity has a strange, insidious intelligence, adapting quickly to threats and absorbing anything it can reach.`,
+                        "HP": `20 (4d6+4)`,
+                        "Morale": `12 ("Driven by a need to grow; relentless in its pursuit of organic matter")`,
+                        "Armor": "3 (Dense, adaptive organic material)",
+                        "Speed": "Slow",
+                        "Attack": `Organic Assimilation: D6 damage + special`,
+                        "SpecialAbilities": `
+                                <p><b>Organic Assimilation (Attack):</b> SCP-003-1 extends tendrils to absorb organic matter within a 10-foot radius. Each creature in this area must pass a Toughness DR 14 check or be partially absorbed, taking D6 damage. If a creature is killed by this effect, SCP-003-1 consumes the body, healing D4 HP and gaining a +1 to its Armor for 1d4 rounds as it integrates the victim’s biomass.</p>
+                                <p><b>Rapid Growth Phase:</b> If SCP-003-1 overheats (typically triggered by removing SCP-003-2 or intense fire), it begins expanding at an alarming rate, covering an area of 5 feet per round. Creatures caught in this expanding mass must make an Agility DR 12 check each round to avoid being engulfed. Engulfed creatures take D4 damage each round until freed.</p>
+                                <p><b>Adaptive Armor:</b> For each different type of damage SCP-003-1 sustains, it adapts, gaining +1 Armor against that specific type for the rest of the encounter. This adaptation can stack up to a maximum of +4 Armor against any single damage type.</p>
+                                <p><b>Self-Replication (Growth Spawns):</b> During its growth phase, SCP-003-1 can create smaller, independent growths called spawns. Each turn, roll a D6; on a 5 or 6, a spawn with HP 4, Armor 1, and D4 damage appears within 10 feet of SCP-003-1. Growth spawns aggressively attack nearby creatures, attempting to assimilate them into the main biomass.</p>
+                                <p><b>Temperature Weakness:</b> SCP-003-1 requires SCP-003-2’s cooling mechanism to remain stable. Without this cooling, it enters its Rapid Growth Phase. If subjected to extreme cold, SCP-003-1 must make a Toughness DR 14 check each round or lose D4 HP as it attempts to halt its own expansion.</p>
+                                `,
+                        "Weakness": `<p>SCP-003-2 is a cooling apparatus necessary to keep SCP-003-1 in a dormant state. Any creature carrying SCP-003-2 within 5 feet of SCP-003-1 can calm its growth temporarily, halting its Rapid Growth Phase for 1d4 rounds.</p>
+                                <p>SCP-003-1 is particularly vulnerable to cold. If exposed to freezing temperatures, it loses its adaptive abilities and suffers an additional D4 damage per round.</p>
+                                `,
+                    }
+                }
+            }
+        },
         {//SCP 005
             "id": "SCP005",
             "name": "SCP 005 - The Skeleton Key",
@@ -28,9 +77,155 @@ const scpData = {
                 }
             }
         },
+        {//SCP 009
+            "id": "SCP009",//"SCP000"
+            "name": "SCP 009 - Red Ice",
+            "safety_class": "Euclid",
+            "image": "images/SCP-009_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `Object is to be contained within a sealed storage tank of heat-resistant alloy with dimensions not less than 2m x 2m x 2m.
+                        <p>Under no circumstances should SCP-009 be exposed to temperatures in excess of 0°C when not undergoing testing, and no water-based solutions shall be allowed within 30 meters of the object's containment area. Object's chamber is to be fitted with temperature sensors which must be monitored at all times, and is to be kept refrigerated by no fewer than three (3) redundant cooling units. Any malfunction of sensors, or of coolant systems, is to be reported and repaired immediately. If at any time the temperature in the containment area climbs above -5°C, the chamber is to be locked down and flooded with coolant until temperatures return to safe levels (-30°C to -25°C).</p>
+                        <p>Containment area is to be kept in total vacuum during testing, and personnel interacting with SCP-009 must wear full environmental protection gear. Following testing, all equipment, personnel, and other materials must undergo dehydration procedures and be quarantined for no less than 12 hours. Any moisture found displaying properties of SCP-009 is to be quarantined and added to the containment area as soon as possible. Living organisms found to be contaminated by SCP-009 are to be terminated by chemical dessication and extracted molecules of SCP-009 added to containment.</p>
+                    `,
+                    "description": `SCP-009 is approximately ███ liters of a substance which superficially resembles distilled water (H2O), except with a distinct bright red hue. This red hue is discernible in all phases, and serves as the most expedient method of identifying contaminated matter before its anomalous properties manifest. In contrast to mundane water, SCP-009 assumes a liquid phase at temperatures between -100°C and 0°C, and a solid state above those temperatures. At temperatures below -100°C, SCP-009 vaporizes into a gaseous phase similar to steam.`,
+                    "additional": `<p>Examinations of the atomic structure of SCP-009 have proved inconclusive. The substance appears to be identical to normal water molecules, with the exception of [REDACTED] in contrast to standard laws of enthalpy. Dr. █████, Site ██'s resident expert on Xenospatial Physics suggests that SCP-009 may originate in a universe with alternate physical laws.</p>
+                        <p>The most hazardous property of SCP-009, however, is its ability to contaminate normal H2O. When in contact with any aqueous solution, SCP-009 will, through unknown mechanisms, transfer its anomalous properties to other objects and creatures. Testing has shown it capable of assimilating ice, steam, tea, fruit juice, seawater, blood, and [DATA EXPUNGED]. The time it takes for this process to occur varies depending on temperature and the exact chemical composition of affected matter, and had been observed as taking between 3 minutes and ██ hours.</p>
+                        <p>Experiments on D-Class personnel have illustrated the process of conversion by the substance, which has been found to follow a consistent pattern:</p>
+                        <p>1. Initial Exposure: Subject is exposed to SCP-009, and it begins assimilating any moisture present on the exposed surface. Creatures in this stage do not commonly notice any unusual symptoms except for a slight warming sensation.</p>
+                        <p>2. Surface Conversion: Frost begins to form on the exposed area as the heat produced by the subject and SCP-009 itself raises its temperature above 0°C. This stage can take anywhere from one (1) minute to █ hours, during which time subjects begin to feel [REDACTED] crystals from the epidermis.</p>
+                        <p>3. Deep Tissue Conversion: Exponential increase in temperature of SCP-009 causes runaway reaction throughout subject's body, resulting in [REDACTED]. Actual blood loss is minimal due to ice crystals [REDACTED], allowing subjects to remain alive and conscious for up to ██ hours.</p>
+                        <p>4. [DATA EXPUNGED]</p>
+                        `
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A pool of crimson, crystalline ice with a sickly red hue, SCP-009 seems like ordinary frozen water until it spreads. Any water it touches quickly transforms, freezing solid, and any creature that touches it begins to experience a horrifying, irreversible crystallization. The cursed ice spreads relentlessly, unstoppable and hungry.`,
+                        "Other": `<p><b>HP:</b> Indestructible under normal means; only extreme heat can melt it temporarily</p>
+                                <p><b>Armor:</b> 3 (Supernaturally cold and resilient)</p>
+                                <p><b>Spread Rate:</b> Expands 5 feet per round across any liquid, converting it to red ice</p>
+                                <p><b>Freezing Corruption (Touch Effect):</b>Any creature or object that comes into direct contact with SCP-009 is infected with its corrupting ice. The creature must make a Toughness DR 14 check. On a failure, their skin and fluids begin to freeze, dealing D6 cold damage immediately and 1 HP damage per round until they find a source of extreme heat to halt the spread.
+                                    <ul>
+                                        <li><b>Secondary Spread:</b> If an infected creature touches another living creature, the ice spreads, forcing the new target to make a Toughness DR 14 check or be affected in the same way.</li>
+                                    </ul>
+                                </p>
+                                <p><b>Infectious Expansion:</b> SCP-009 rapidly spreads across any nearby water sources, freezing them within seconds. Every round, SCP-009 expands 5 feet in all directions where there is water, converting it to red ice. Once frozen, this area remains permanently affected, with the ice capable of transferring the corruption to anyone who touches it.</p>
+                                <p><b>Mortal Cold:</b> Creatures within a 10-foot radius of SCP-009 must make a Toughness DR 12 check each round or take D2 cold damage from the intense chill radiating off the ice.</p>
+                                <p><b>Unnatural Resilience:</b> SCP-009 cannot be melted through ordinary means. Only extreme heat (such as fire magic or a furnace) can melt portions of the ice temporarily, slowing its spread for 1d4 rounds. Even melted portions of SCP-009 refreeze within seconds if not kept in continuous, intense heat.</p>
+                                `,
+                        "Weakness": `<p>Only extreme, continuous heat can prevent SCP-009 from spreading. When exposed to sustained, powerful heat, SCP-009’s spread rate is halted, and creatures infected by SCP-009’s ice can halt the spread within their bodies with a successful Toughness DR 12 check.</p>
+                                <p>A thick line of salt surrounding SCP-009’s perimeter can slow its spread by creating a temporary barrier (lasting for 1d4 hours).</p>`,
+                    }
+                }
+            }
+        },
+        {//SCP 035
+            "id": "SCP035",//"SCP000"
+            "name": "SCP 035 - The Possessive Mask",
+            "safety_class": "Keter",
+            "image": "images/SCP-035_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-035 is to be kept within a hermetically sealed glass case, no fewer than 10 centimeters (4 inches) thick. This case is to be contained within a steel, iron and lead-shielded room at all times. Doors are to be triple-locked at all times, with the exception of allowing personnel in or out. No fewer than two (2) armed guards are to be posted at any time. Guards must remain outside at all times and are not allowed within the containment room under any circumstances. A trained psychologist is to remain on site at all times. Research personnel are not to touch SCP-035 at any time. SCP-035 must be moved to a new sealed case every two (2) weeks. The previous case must be disposed of via SCP-101, as it shows no adverse reactions to SCP-035's “corruption”. Anyone who comes into contact with SCP-035 when it is in possession of a host is to be given an immediate psychological evaluation.`,
+                    "description": `SCP-035 appears to be a white porcelain comedy mask, although, at times, it will change to tragedy. In these events, all existing visual records, such as photographs, video footage, even illustrations, of SCP-035 automatically change to reflect its new appearance.`,
+                    "additional": `<p>A highly corrosive and degenerative viscous liquid constantly seeps from the eye and mouth holes of SCP-035. Anything coming into contact with this substance slowly decays over a period of time, depending on the material, until it has decayed completely into a pool of the original contaminant. Glass seems to react the slowest to the effects of the item, hence the construction choice of its immediate container. Living organisms that come into contact with the substance react much the same way, with no chance of recovery. Origin of the liquid is unknown. Liquid is only visible from the front, and does not emerge or is even visible from the other side.</p>
+                                <p>Subjects within 1.5 to 2 meters (5-6 feet) of SCP-035, or in visual contact with it, experience a strong urge to put it on. When SCP-035 is placed on the face of an individual, an alternate brain wave pattern from SCP-035 overlaps that of the original host, effectively snuffing it out and causing brain death to the subject. Subject then claims to be the consciousness contained within SCP-035. The bodies of "possessed" subjects decay at a highly accelerated rate, eventually becoming little more than mummified corpses. Nevertheless, SCP-035 has demonstrated the ability to remain in cognitive control of a body experiencing severe structural damage, even if the subject's body literally decays to the point where motion is not mechanically possible. No effect is found to be had when placed on the face of an animal.</p>
+                                <p>Conversations with SCP-035 have proven to be informative. Researchers have learned various details about other SCP objects and history in general, as SCP-035 claims to have been at many momentous events. SCP-035 displays a highly intelligent and charismatic personality, being both amiable and flattering to all those who speak with it. SCP-035 has scored in the 99th percentile on all intelligence and aptitude tests administered to it, and appears to have a photographic memory.</p>
+                                <p>However, psychological analysis has discovered SCP-035 to possess a highly manipulative nature, capable of forcing sudden and profound changes to interviewer's psychological state. SCP-035 has proven to be highly sadistic, prompting some to commit suicide and transforming others into near-mindless servants with linguistic persuasion alone. SCP-035 has stated that it has intimate knowledge of the workings of the human mind and implied that it could change anyone's views if given enough time.</p>
+                                `
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A white porcelain comedy mask with an eternally smiling face. Its expression never changes, yet it seems to communicate emotions through an unseen force. When worn, it grants intelligence and power but ultimately consumes its host.`,
+                        "HP": `10 (when possessing a host, uses host’s HP)`,
+                        "Morale": `Immune (will not retreat; seeks only to find and manipulate new hosts)`,
+                        "Armor": "3 (Porcelain mask, resistant to minor damage)",
+                        "Speed": "As host’s speed",
+                        "Attack": `Possession: Special`,
+                        "SpecialAbilities": `
+                                <p><b>Possession (Attack):</b> When placed on a creature's face, SCP-035 takes control of the host's mind and body. The creature must make a Toughness DR 14 check; on a failure, they become fully possessed, and SCP-035 controls all of their actions. Once possessed, the host's body begins to decay rapidly, suffering 1 HP damage per hour until they either perish or the mask is removed (which requires extreme force or specific rituals).</p>
+                                <p><b>Mental Manipulation:</b> If SCP-035 is in close proximity (within 10 feet), it can attempt to charm or influence any creature by speaking to them in a mesmerizing, persuasive voice. Targets must succeed on a Presence DR 12 check or be compelled to do its bidding for the next 1d4 rounds. This could include removing armor, giving it items, or even putting on the mask.</p>
+                                <p><b>Decay Aura:</b> Any creature within 5 feet of SCP-035 while it is worn suffers an aura of rot and decay. Each round, all creatures within this range must make a Toughness DR 12 check or take D2 damage as their skin blisters and their health weakens from the mask’s corrosive influence.</p>
+                                <p><b>Insidious Knowledge:</b> SCP-035 whispers dark secrets and eldritch knowledge to its host, granting them strange abilities. While possessed, the host gains +2 to all Presence-based rolls but takes 1d4 damage per day from mental strain and horror. Additionally, the host may learn unnatural spells or forbidden lore that remains in their mind even after the mask is removed—if they survive.</p>
+                                `,
+                        "Weakness": `<p>SCP-035 can only be removed by a powerful ritual (Presence DR 16), holy relic, or forceful means (risking severe harm to the host). Each attempt to remove the mask deals D6 damage to the host as it fights to stay attached.</p>
+                                <p>SCP-035 is highly flammable; fire-based attacks deal double damage to the mask, though this risks damaging the host as well.</p>`,
+                    }
+                }
+            }
+        },
+        {//SCP 040
+            "id": "SCP040",//"SCP000"
+            "name": "SCP 040 - Evolution's Child",
+            "safety_class": "Euclid",
+            "image": "images/SCP-040_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-040-1a, 1c, and 1j have been approved to remain in the containment chamber with SCP-040 for purposes of the subject’s mental well-being. (Security Chief Special Order 392-5: ██/██/██). All other entities modified by SCP-040 during testing are to be disposed of after study according to standard biological specimen clearance protocols, as outlined in Document CDP-BIO-EN-1.
+                        <p><b>Standard Containment Policies:</b>
+                        <ul>
+                            <li>Two-person residential module (no amenity restrictions)</li>
+                            <li>Access to site library, recreational facilities, cafeteria, and public areas (supervised)</li>
+                            <li>Dietary restriction (mild peanut allergy)</li>
+                            <li>Youth educational curriculum enrollment (Drs. Abernathy, Logan, and Izawa)</li>
+                            <li>Bi-weekly psychological review (Dr. Abernathy)</li>
+                            <li>Schedule B experimentation plan</li>
+                        </ul>
+                        </p>
+                        `,
+                    "description": `SCP-040 is a human child capable of at-will manipulation of the physical characteristics of living organisms. Modified organisms are collectively referred to as SCP-040-1.`,
+                    "additional": `<p>Modifications are primarily cosmetic, ranging from simple color and pattern changes to more involved shifts in bodily form and structure. The creation of new specialized organs is possible, but appears to be the limit of SCP-040’s ability and currently has a 66% failure rate in testing. Modifications are limited to what would be physically possible (regardless of the probability of such a feature naturally arising) – for example, while SCP-040 can grant an organism wings that does not naturally possess them, they will not permit the creature to fly without meeting other physical requirements. SCP-040-1 undergo behavior shifts as part of the modification process, acting with extreme loyalty to SCP-040 regardless of prior association.</p>
+                                <p>SCP-040’s anomalous property requires significant focus and time to enact and causes intense headaches and nausea when performed for more than a few minutes at a time. The effect becomes increasingly unreliable and inaccurate the smaller the modifications or more complex the changes are. SCP-040 is incapable of altering microscopic organisms, and has great difficulty in altering plant life. Dead organic matter may also be used, but must be used in conjunction with a living organism. Instances of SCP-040-1 cannot be modified more than once, though it is currently unknown if this is a hard limit of SCP-040’s properties, or from a lack of mastery over them.</p>
+                                <p>SCP-040’s emotional state is within acceptable boundaries for an individual of its age group, accounting for the effects of prolonged containment and parental seperation. Subject’s intelligence is slightly above-average for its age group. Behavior is generally cooperative. SCP-040 acclimatized quickly to containment, and responded well to the initial orientation and socialization programs. SCP-040 responds to the name "Forty", and does not appear to have any other given or chosen personal name.</p>
+                                <p><b>Recovery Summary:</b> Subject was taken into custody on ██/██/2008 as part of the raid on the Keys to the Kingdom Christian Charter School for Gifted Youth in [REDACTED], Colorado. The raid’s primary objective, being the capture or execution of █████ ██████, a former CIA operative who had previously worked alongside Foundation intermediaries as part of Project Blackbook, Project Smilodon and Operation STARGATE from 1967 – 1971, was successful. ██████ was terminated on site and disposed of without incident.</p>
+                                <p>Of the 15 children recovered from the facility, SCP-040 was the only one to demonstrate anomalous properties: the others were administered amnestics and placed in Foundation-observed foster care. Interviews with staff at the school revealed that they were unaware of ██████’s prior history or any connection with Foundation operations. They were administered amnestics and put under a sixth-month communications monitor – no relapses were recorded.</p>
+                                <p>See Operation TATZELWURM after-action report for complete event record.</p>
+                                `
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `SCP-040, also known as "Evolution’s Child," is a frail young girl with an unsettling power over life itself. Her physical form is as delicate as her mental state, and she is often seen nervously clutching hairpieces made from strange materials, used to suppress her biokinetic abilities. Despite her gentle demeanor, her subconscious power to alter living matter can create twisted and unnatural creatures.`,
+                        "HP": `10 (2d6+3)`,
+                        "Morale": `8 ("Nervous and fearful, likely to retreat or panic under stress")`,
+                        "Armor": "0 (fragile and sensitive to touch)",
+                        "Speed": "Slow",
+                        "Attack": `Biokinesis: Alters or creates living organisms near her: Special`,
+                        "SpecialAbilities": `
+                                <p><b>Biokinesis (Attack):</b> SCP-040 can manipulate living creatures within 10 feet, creating new SCP-040-1 instances (hybrid lifeforms) through subconscious or intentional will. This ability requires 2 rounds of uninterrupted concentration. After each use, SCP-040 must pass a Toughness DR 12 check or suffer a -1 penalty to all rolls for 1d4 hours due to exhaustion. Creatures altered this way are unnaturally loyal to SCP-040 and defend her against threats.</p>
+                                <p><b>SCP-040-1 Instances (Hybrid Creatures):</b> SCP-040 is often accompanied by up to 1d3 SCP-040-1 instances at any time. Each is a bizarre combination of animals, loyal to SCP-040, and may have one unique ability based on its traits. Examples include:
+                                    <ul>
+                                        <li><b>SCP-040-1a (Symbiotic Jacket):</b> A shape-shifting organism resembling a jacket or cloak. It grants SCP-040 light camouflage, causing any attack directed at her to suffer a -1 penalty to hit.</li>
+                                        <li><b>SCP-040-1c (Musical Sphere):</b> A floating creature with a spherical body and flexible limbs. Once per round, it emits a soothing tune, forcing enemies within 15 feet to pass a Morale DR 10 check or hesitate, taking a -1 penalty to attacks for the next round.</li>
+                                        <li><b>SCP-040-1j (Climbing Beast):</b> SCP-040-1j (Climbing Beast): A grotesque, quadrupedal creature covered in thick blue and pink fur. The Climbing Beast has no eyes and a broad, toothless mouth. With its sticky limbs, it can effortlessly scale vertical surfaces, often serving as a mount for SCP-040.
+                                            <ul>
+                                                <li><b>HP:</b> 8</li>
+                                                <li><b>Morale:</b> 12 ("Loyal to SCP-040; will protect and follow her commands until destroyed")</li>
+                                                <li><b>Armor:</b> 1 (Thick fur and hide)</li>
+                                                <li><b>Speed:</b> Normal (on ground), Fast (when climbing)</li>
+                                                <li><b>Attack:</b> Crushing Bite: D4 damage</li>
+                                            </ul><ul>
+                                                <li><b>Sticky Limbs:</b> The Climbing Beast can cling to and scale vertical surfaces effortlessly. It moves at Fast speed when climbing and can carry SCP-040 or another small creature on its back. If in combat while climbing, enemies attempting to strike it must pass an Agility DR 12 check or fall from their position.</li>
+                                                <li><b>Blind, but Heightened Senses:</b> Though eyeless, the Climbing Beast has acute hearing and smell. It cannot be easily surprised and gains +2 to all Morale checks to detect nearby threats within 30 feet.</li>
+                                                <li><b>Protective Loyalty:</b> The Climbing Beast will interpose itself between SCP-040 and any attackers within reach. When SCP-040 is targeted by an attack, there is a 50% chance the Climbing Beast intercepts it, taking the hit instead.</li>
+                                            </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p><b>Subconscious Mutation:</b> Due to her lack of control, SCP-040 may unintentionally trigger her powers when under extreme stress. If SCP-040 suffers damage or fails a Morale check, roll a D6; on a 1-3, she subconsciously activates Biokinesis, creating a random SCP-040-1 creature (GM’s choice) as a defensive reflex. Each time this happens, she must pass a Presence DR 14 check or suffer a panic attack, gaining -1 to all Presence-based rolls until calmed.</p>
+                                <p><b>Fragile Physiology:</b> SCP-040’s body is sensitive and easily injured. Any physical attack that lands on SCP-040 has a 1-in-6 chance to deal double damage due to her brittle skin and fragile bones. Additionally, prolonged exposure to bright light causes her 1 HP damage per hour unless she finds shelter or shade.</p>
+                                <p><b>SCP-148 Hairpieces (Power Suppression):</b> SCP-040 wears small hairpieces made of SCP-148, a rare material that dampens her powers. These hairpieces reduce the likelihood of Subconscious Mutation by 50% (only occurs on a roll of 1-2 out of 6). If the hairpieces are lost or removed, SCP-040’s biokinesis becomes more unstable, causing Subconscious Mutation on a roll of 1-4.</p>
+                                `,
+                        "Weakness": `<p>Due to her repressed powers and anxiety, SCP-040 suffers double damage from Presence-based spells or effects targeting the mind.</p>
+                                <p>Each time SCP-040 consciously activates Biokinesis, she must rest for at least 1d4 hours or suffer a cumulative -1 penalty to all rolls due to mental and physical fatigue.</p>
+                                <p>SCP-040 is easily frightened and avoids direct combat. In dangerous situations, she will often rely on her SCP-040-1 creatures for protection or attempt to escape if possible.</p>`,
+                    }
+                }
+            }
+        },
         {//SCP 049
             "id": "SCP049",
-            "name": "SCP 049 - The Plague Doctor",
+            "name": "SCP 049 - Plague Doctor",
             "safety_class": "Euclid",
             "image": "images/SCP-049_img.webp", // .png .jpg .webp
             "info": {
@@ -567,6 +762,47 @@ const scpData = {
                 }
             }
         },
+        {//SCP 231
+            "id": "SCP231",//"SCP000"
+            "name": "SCP 231-7 - The Seventh Bride",
+            "safety_class": "Keter",
+            "image": "images/SCP-231_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `Following repeated escape and suicide attempts, and based on the failure of containment for SCP-231-1 through 6, containment of SCP-231-7 has been amended to the following: SCP-231 is to be contained within a soundproof holding cell, adjacent to holding cells for six Class D Personnel assigned for the purposes of Procedure 110-Montauk. Cameras will monitor every inch of the cell at all times, and must be manned 24 hours a day. Malfunctioning monitoring equipment will be replaced without delay by psychologically screened staff. Doors will be magnetically locked, openable only by positive action by the control and monitoring facility. This includes all doors linking the main holding cell to those of the six Class D Personnel.
+                            <p>SCP-231-7 is to be kept restrained to a hospital bed at all times except for the purposes of Procedure 110-Montauk. Hydration will be provided through IV drip. Feeding will be carried out twice per day through feeding tube by approved medical personnel who have not taken the Hippocratic Oath. Under no circumstances are narcotics, anesthesia, or other unapproved medications to be administered to SCP-231-7.</p>
+                            <p>Procedure 110-Montauk is to be carried out at least once every 24 hours by Class D Personnel. During Procedure 110-Montauk, at least one Security Clearance 4/231 staff member must monitor the procedure by camera at all times, although the sound may be turned off if the vocalizations of SCP-231-7 become too distressing. Following the procedure, all Class D Personnel must return to their holding cells or explosive collars will be detonated. [DATA EXPUNGED PER ORDER OF O5-██ ON ██-██-████. INFORMATION MOVED TO EYES-ONLY DOCUMENT 231-110-MONTAUK. ACCESS TO 231-110-MONTAUK IS LIMITED TO PERSONNEL WITH SECURITY CLEARANCE 4/231]</p>
+                        <p><b>Site and Personnel Requirements:</b>Under special order of O5-██, the following addendum is attached to the beginning of the file for SCP-231-7. All personnel assigned to SCP-231-7 must rotate out for one month of psychological counseling after two months on-site. SCP-231-7 is to be kept at an undisclosed location. All personnel assigned to SCP-231 will be transported there blindfolded from Site-19 by a route including no fewer than seven different forms of transportation, including but not limited to aircraft, automobile, underground tunnel, and ████████████. Removal of the blindfold during the transport process is grounds for immediate termination. Personnel assigned to SCP-231-7 must undergo heavy psychological testing before being cleared to enter the site. Individuals must score at least 72 points on the Milgram Obedience Examination, be unmarried, have no offspring, and express nothing less than total loyalty to the Foundation. Normal psychological screening procedures against Axis II disorders are waived, so long as the Class-D personnel in question has the mental capacity to carry out Procedure 110-Montauk as needed. Personnel who express sympathy towards SCP-231-7's plight and/or express a desire to rescue or sympathize towards SCP-231-7 will be transferred to another project without delay. Any actual rescue attempts will be met with immediate termination. Personnel who have served on the staff of SCP-231-7's Containment Team are not required to divulge that information to others. No official record shall be kept of the names of any staff assigned to SCP-231-7, nor will said service appear in the personnel files of said staff. While on-site, individuals assigned to SCP-231-7 will be issued concealing helmets with integrated voice changers to protect their identity. On-site staff are not to remove said uniforms in the presence of other staff members. Off-duty hours are to be spent in private quarters alone.</p>
+                            <p>Six Class D Personnel are to be assigned to SCP-231-7 each month for the purposes of carrying out Procedure 110-Montauk. Violent criminals are not to be used for this purpose due to the possibility of accidental fatality during the 110-Montauk process.</p>
+                            `,
+                    "description": `SCP-231-7 is a █████ female between █ and ██ years of age, with [DATA EXPUNGED]. SCP-231-1 through 7 were retrieved from ██████████, ██, following a police raid on a warehouse owned by an organization called the Children of the Scarlet King (see article on ██-██-████ in the ████████████ ██████ newspaper, "Police Raid Satanic Sex Cult, Save Seven"). 24 hours after the rescue, SCP-231-1 (real name ████████████ ████████████) went into labor pains, giving birth three minutes later to SCP-██ (█████████ ██████████), causing a ██████████ event resulting in over ███ confirmed casualties. Foundation Personnel immediately took possession of remaining SCPs 231-2 through 231-7 and, based on notebooks recovered from the cult, instituted Procedure 110-Montauk to prevent future occurrences. `,
+                    "additional": ``
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A young, broken girl burdened with the prophecy of birthing a world-ending entity, SCP-231-7, the last of the Seven Brides, was captured and held by the Foundation. Daily, she endured the harrowing Procedure-110-Montauk to prevent her child from being born—a monstrous ritual with catastrophic potential if not carried out.`,
+                        "HP": `6`,
+                        "Morale": `0 ("Utterly resigned, her spirit shattered")`,
+                        "Armor": "5 (Arcane bindings and wards)",
+                        "Speed": "None (kept bound and unable to move)",
+                        "Other": `<b>Cataclysmic Birth:</b> Special`,
+                        "SpecialAbilities": `
+                                <p><b>Cataclysmic Birth (Event Trigger):</b> If SCP-231-7’s containment is compromised or if Procedure-110-Montauk is not performed within a 24-hour window, SCP-231-7 will enter labor, unleashing a destructive force as a consequence of her child’s birth. The event unfolds in three escalating phases:
+                                    <ul>
+                                        <li><b>Phase 1: The Summoning of Dread:</b> SCP-231-7’s screams cause an overwhelming dread. All creatures within 100 feet must pass a Presence DR 16 check or take D6 damage as terror and pain sear into their minds.</li>
+                                        <li><b>Phase 2: Reality Tears Open:</b>The air distorts, and cracks appear in reality. Any creature within 50 feet must pass an Agility DR 14 check or fall prone, stunned for 1d3 rounds as reality warps around them. These cracks are filled with whispers from another realm, warning of the King’s arrival.</li>
+                                        <li><b>Phase 3: Birth of the Herald of the Scarlet King:</b> SCP-999, a creature of warmth and compassion, emerges. Though appearing harmless, its aura weakens any hostile creatures within 30 feet, reducing their rolls by -2 until they move beyond its range. In this version of the tale, SCP-999 is prophesied as humanity's hope against the Scarlet King.</li>
+                                    </ul>
+                                </p>
+                                <p><b>Ritual of A’habbat (Containment Procedure):</b> Procedure-110-Montauk is an extreme, highly dangerous ritual required daily to prevent SCP-231-7 from entering labor. The ritual’s dark and violent nature makes it especially traumatic for SCP-231-7, who is given Class-A amnestics weekly to forcefully erase her memory, ensuring her fear and suffering remain potent. Each day without performing the ritual increases the chance of Cataclysmic Birth by +1 on a D6 roll.</p>
+                                <p><b>Aura of Desperation:</b> Any creature within 15 feet of SCP-231-7 must pass a Presence DR 12 check at the start of each round or take a -1 penalty to all rolls, weighed down by her overwhelming despair.</p>
+                                `,
+                        "Weakness": `<p>SCP-231-7’s psychological state is pivotal in containing her condition. Any attempts to offer her comfort, care, or hope risk triggering a change in her emotional state, potentially undermining Procedure-110-Montauk.</p>
+                                <p>Due to her connection with SCP-999 and the prophecy of the Scarlet King’s eventual defeat, there is a hidden resilience within SCP-231-7. If SCP-231-7 is freed from containment, she becomes non-anomalous, ending her connection to the Scarlet King permanently. However, her child must be born under the guidance of a sacred ritual to prevent an apocalyptic disaster.</p>`,
+                    }
+                }
+            }
+        },
         {//SCP 280
             "id": "SCP280",//"SCP000"
             "name": "SCP 280 - Eyes in the Dark",
@@ -688,6 +924,42 @@ const scpData = {
                                 <p><b>Lasting Bond:</b> Characters who repeatedly eat from the bowl develop a subtle bond with it, feeling a compulsion to keep it close. If the bowl is ever lost or taken, they feel as if they’ve lost something deeply personal and meaningful, imposing -1 to all Morale checks until it is recovered.</p>
                                 <p><b>Unyielding Fragility:</b> Despite appearing ordinary, the Bowl of Quiet Comfort is incredibly resilient and cannot be broken or damaged by conventional means. However, it will vanish if used in an act of violence or selfish greed, leaving behind only a faint, comforting warmth as it disappears.</p>
                                 `
+                    }
+                }
+            }
+        },
+        {//SCP 447
+            "id": "SCP447",//"SCP000"
+            "name": "SCP 447 - The Green Slime",
+            "safety_class": "Safe",
+            "image": "images/SCP-447_img.webp", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-447-1 is to be kept within a fifty-gallon clear plastic container at all times, monitored by camera by a Security Level 3 or higher staff member to prevent overflow. Area is to be maintained at Level 1 Clean Room status to prevent contamination by foreign matter at a site at least 10 km from any cemetery, morgue, or mortuary. Under no circumstances is SCP-447 to be allowed to come into contact with dead bodies.
+                                <p>Because SCP-447-1 constantly excretes a viscous greenish slime (designated SCP-447-2) at a rate of approximately 10 cc/hour, a Class D personnel in good physical condition is to be detailed to harvest the excreted slime at least once per day. SCP-447-2 can be harvested using any appropriate equipment, so long as safety procedures are carefully adhered to in order to prevent on-site fatalities. Slime can be transported in an ordinary sealed glass or plastic container through any standard mode of transportation, provided that there is no risk of the slime coming into contact with a dead body en route.</p>
+                                <p>Although malodorous, the slime harvested from SCP-447-1 is nontoxic, noncorrosive, and nonradioactive. It is, in fact, perfectly safe so long as it does not come into contact with a dead body. The slime is edible, and reportedly makes a good salad dressing. Adding 10 cc of SCP-447-2 to one gallon of gasoline improves fuel efficiency by 150%. Furthermore, SCP-447-2 can be refined (see Appendix 447-C: Distillation Process) into a useful lubricant approved for use at all SCP Foundation installations, so long as said lubricant is never used to lubricate dead bodies.</p>
+                                <p>All staff assigned to SCP-447 are to be screened by polygraph for any suicidal, necrophiliac, or homicidal tendencies. In addition, all staff assigned to SCP-447 must be in good health and good physical condition, and must adhere to on-site safety regulations at all times. This is to minimize the risk of SCP-447 or its generated slime coming into contact with a dead body.</p>
+                                `,
+                    "description": `SCP-447-1 is a green sphere approximately 5 cm in diameter, with a spongy surface texture and a weight of 1.37 kg. The object is warm to the touch, approximately the same temperature as a human body, although its core temperature is slightly higher. Personnel handling SCP-447-1 have reported no adverse effects, so long as SCP-447-1 does not come into contact with a dead body.`,
+                    "additional": `<p>SCP-447 was retrieved by Foundation agents on ███████ in the city of ██████████, California, United States of America. The incident clearly illustrates the danger inherent in allowing either SCP-447 unit to come into contact with a dead body. For further information, please see Appendix 447-A: Retrieval Report.</p>
+                                <p>The dangers of allowing SCP-447-1 or -2 to come into contact with dead bodies have been clearly documented: detailed eyewitness reports can be found in Appendix 447-B: Prior Incidents. To summarize, however, initial effects include [DATA EXPUNGED PER O5-LEVEL DIRECTIVE. RESEARCH INTO THIS FIELD FORBIDDEN UPON PAIN OF IMMEDIATE TERMINATION OR DEMOTION TO CLASS D. PLEASE CONTACT YOUR SUPERVISOR FOR MORE DETAILS].</p>`
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A thick, viscous, green slime with an oddly pleasant smell. SCP-447 is harmless when in contact with living beings or objects, but it harbors an ominous power if it comes into contact with the dead. Its true effects are unknown, but witnesses report terrible, reality-warping consequences when it touches corpses.`,
+                        "Other": `<p><b>Harmless to the Living:</b> The green slime is entirely harmless when it comes into contact with living creatures. It has a curious, calming effect, and any creature that touches it feels an unusual sense of peace and is healed for 1 HP once per day. It is strangely addictive, though, and any creature that touches it must pass a Presence DR 12 check or feel an overwhelming urge to touch it again.</p>
+                                <p><b>Catastrophic Reaction to the Dead (Effect):</b> If SCP-447 comes into contact with a dead body, its properties change instantly and catastrophically. Any corpse touched by the slime creates a horrific anomaly. The GM should determine the specific outcome, but some possibilities include:
+                                    <ul>
+                                        <li><b>Unnatural Resurrection:</b> The corpse rises as an undead creature with unpredictable and dangerous behavior, attacking anything in sight.</li>
+                                        <li><b>Rotting Disease:</b> A sickly green mist spreads from the corpse, dealing D4 damage per round to anyone within 10 feet until they leave the area.</li>
+                                        <li><b>Reality Tear:</b> A rift opens, summoning horrors from another dimension or a twisted version of the corpse, with HP 8 and dealing 1d6 damage per hit.</li>
+                                    </ul>
+                                </p>
+                                <p><b>Mutagenic Effect:</b> If a creature is splashed or soaked in SCP-447 for more than 1d4 rounds, they must make a Toughness DR 14 check. Failure causes subtle mutations over the course of 1d6 hours: growths, extra eyes, or green-tinted skin. This mutation imposes -1 to all Presence-based rolls due to the unsettling effects.</p>
+                                <p><b>Mystic Attraction:</b> The green slime emits a strange, subtle hum that attracts undead or demonic entities within 100 feet. These entities are compelled to move toward it, becoming frenzied if they come within 10 feet. This effect lasts until the slime is removed or destroyed.</p>
+                                `,
+                        "Weakness": `<p>SCP-447 can be stored in a sealed container, and will not produce its catastrophic effects unless in direct contact with a corpse. It is relatively easy to transport as long as it’s carefully handled.</p>
+                                <p>Though difficult to ignite, if SCP-447 is exposed to fire, it evaporates, emitting a harmless green smoke. Any attempts to burn it must succeed on a Toughness DR 12 due to its high viscosity.</p>`,
                     }
                 }
             }
@@ -1334,6 +1606,52 @@ const scpData = {
                 }
             }
         },
+        {//SCP 1678
+            "id": "SCP1678",//"SCP000"
+            "name": "SCP 1678 - UnLondon",
+            "safety_class": "Euclid",
+            "image": "images/SCP-1678_img.png", // .png .jpg .webp
+            "info": {
+                "": {
+                    "containment": `SCP-1678 remains only partially contained. Mobile Task Forces Tau-4 and Epsilon-6 have succeeded in establishing a defensible perimeter around the Hyde Park district of SCP-1678, with cases of SCP-1678-A largely ceasing their attacks on the perimeter of the Foundation-held area. A long-term research base is currently under construction, and Mobile Task Force commanders are preparing an assault on the SCP-1678 Natural History Museum with the intent of capturing a forward command post to direct defense efforts. Current short-term aims involve the capture of, and extension of the defensible perimeter to, the SCP-1678 Natural History Museum, and to research and to ascertain the origins, construction, and weaknesses of the SCP-1678-A entities. Long-term aims involve efforts to halt, hinder, or control the production of the SCP-1678-A entities, and to assault the SCP-1678 Houses of Parliament, where the being, entity, or intelligence responsible for the creation of SCP-1678 is believed to reside, and to capture and contain the aforementioned being.`,
+                    "description": `SCP-1678 is a full-scale mirror-image reconstruction of the British city of London, located exactly one kilometer underneath the original city of London. Currently, only the Hyde Park district of SCP-1678 has been explored, but all buildings, at least within the explored district, correlate exactly to their surface counterparts in terms of location, as well as the exterior size and shape, although rarely in terms of architecture, building material, and interior layout. The city has been constructed to resemble the city as it was in the Victorian era, with constructions designed to resemble traditional gas lighting prevalent on the streets and with all modern buildings in the original city of London being represented in a Victorian style of architecture, most notably the skyscrapers of the Business district. Illumination is infrequent and unreliable, and it is unknown how SCP-1678 has acquired a steady oxygen and gas supply.`,
+                    "additional": `<p>SCP-1678 is believed to have been constructed instantaneously by unknown means, with the SCP-1678 Houses of Parliament serving as the ‘epicenter’ for the construction process. This is evidenced by the fact that, as distance from the Houses of Parliament increase there is an exponentially increasing frequency of flaws in the construction of SCP-1678, such as houses built entirely out of copper pipes or other unconventional materials, ‘gas lights’ being little more than a metal rod topped with a floating orb of light, buildings containing no floors, and, at the furthest explored distance from the epicenter, no windows or doors. Aside from Foundation occupants and cases of SCP-1678-A, B and C, SCP-1678 is believed to be uninhabited.</p>
+                                <p>SCP-1678 is believed to have been constructed with the intent to harbor the survivors of an XK-class end-of-the-world event. This is evidenced by an audio recording that will activate and play upon any person entering the city.</p>
+                                <p>Most explored buildings within SCP-1678 appear to have been outfitted for the purpose of extremely dense inhabitation with closely grouped steel bunk beds, a common feature in any building suitable for the purpose. Foundation researchers have advised that most explored buildings within SCP-1678 are unfit for human habitation, due to a high preponderance of mould, damp, and poor construction within these buildings. Some buildings are outfitted for other purposes, most notably the SCP-1678 version of the Natural History Museum, which is featuring an exhibit titled ‘The Fall of Man’ and contains representations of several known SCP entities, and images and artwork depicting apocalyptic settings.</p>
+                                <p>The key threat posed by SCP-1678 is by entities referred to in some SCP-1678 audio recordings as ‘Bobbies’ (‘Bobby’ is known to be a Victorian-era British slang term for ‘Policeman’), henceforth referred to as SCP-1678-A. These entities are constructed out of human corpses crudely dismembered at the head, wrists, knees and elbows and re-assembled using simple industrial hinges and screws. The head is always wrapped in bandages. They are dressed in a uniform similar to Victorian-era police and are extremely hostile towards Foundation personnel, attacking them on sight with improvised weapons. These attacks are always preceded by SCP-1678-A emitting a noise similar to that of a policeman’s whistle, and all loudspeakers within one hundred meters emitting the audio recording ‘‘Police! Halt, criminal!’’. Instances of SCP-1678-A are extremely resistant to damage, with only high-caliber rounds and explosive weapons proving sufficient to destroy them. They are believed to originate from a building named ‘Bryson’s Home for the Poor’, as evidenced by an inmate-style jumpsuit worn under the uniform.</p>
+                                <p>To what extent they interact with other SCP-1678 entities is unknown.</p>`
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A dark, twisted version of London, built beneath the earth as a strange mockery of the original city. In UnLondon, strange automatons and constructs patrol the streets, watching for "criminals" to enforce a draconian sense of order. Bizarre propaganda echoes through the streets, warning of danger and instilling a false sense of protection.`,
+                        "Other": `<b>Endless Propaganda:</b> Recorded announcements boom through the streets, repeating warnings and commands. Every hour, players must pass a Toughness DR 10 check or gain 1 Stress (house rule for mental strain or horror mechanics). At 4 Stress, players become paranoid, taking -1 to all Presence-based rolls.
+                                <p><b>Gas-Filled Air:</b> The air in UnLondon is slightly toxic. Players must pass a Toughness DR 12 check each day or lose D4 HP from prolonged exposure. Masks can help mitigate this.</p>
+                                <p><b>Automaton Patrols:</b> Bobbies patrol the streets, programmed to enforce “law” and punish “deviants.” Each patrol consists of 1d4 Bobbies, moving in squads, sometimes accompanied by surveillance devices (see below).</p>
+                            <p><b style="text-decoration: underline; font-size: x-large;">UnLondon Enforcers - The Bobbies</b> 
+                                <ul style="margin-bottom: 0;">
+                                    <div><b>HP:</b> 12 (3d6+3)</div>
+                                    <div><b>Morale:</b> 12 ("Programmed obedience; will never retreat unless fully destroyed")</div>
+                                    <div><b>Armor:</b> 2 (Metallic plating)</div>
+                                    <div><b>Speed:</b> Normal</div>
+                                    <div><b>Attack</b> Baton Strike: D6 damage + special</div>
+                                </ul>
+                                <div style="margin-top: 1%; margin-right: 1%;"><b style="text-decoration: underline; font-size:larger;">Special Abilities</b>
+                                <ul>
+                                    <li><b>Baton Strike (Attack):</b>
+                                        <ul>
+                                            <li><b>Damage:</b> D6</li>
+                                            <li><b>Special:</b>  On a successful hit, the target must pass a Toughness DR 12 check or become Stunned for 1 round as the baton’s impact disorients them.</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Compliance Spray:</b> Each Bobby carries a canister of a foul, gas-like spray. Once per encounter, a Bobby can release this spray on all targets within a 5-foot radius. All creatures within this radius must pass a Toughness DR 14 check or take D4 damage and suffer a -1 penalty to all rolls for the next 1d4 rounds due to irritation and coughing.</li>
+                                    <li><b>Relentless Enforcers:</b> Bobbies pursue any target who defies UnLondon’s “laws.” When in groups, they gain a +1 to attack rolls. If a target tries to flee, Bobbies can call for reinforcements (another 1d4 Bobbies arrive in 1d6 rounds).</li>
+                                </ul>
+                            </p>`,
+                        "Weakness": `<p>A direct, high-energy electrical attack causes Bobbies to short-circuit. If hit with electricity (from a trap, artifact, or improvised shock), they must make a Toughness DR 12 check or be Stunned for 1d4 rounds.</p>`,
+                    }
+                }
+            }
+        },
         {//SCP 1851
             "id": "SCP1851",
             "name": "SCP 1851 - The Secret of the Fair Folk",
@@ -1693,6 +2011,52 @@ const scpData = {
                 }
             }
         },
+        {//SCP 3023
+            "id": "SCP3023",//"SCP000"
+            "name": "SCP 3023 - The Arachnoid Phenomenon",
+            "safety_class": "Keter",
+            "image": "images/SCP-3023_img.webp", // .png .jpg .webp
+            "image_source":"https://www.reddit.com/r/SCP/comments/yxh6v1/i_supposedly_stole_a_design_from_scp3023_few/",
+            "info": {
+                "": {
+                    "containment": `Phone calls and internet traffic in SCP-3023's active region are to be monitored closely for mention of events correlated to SCP-3023 activity. Should SCP-3023 activity be confirmed, Mobile Task Force Alpha-21, "Julia's Angels", must immediately be dispatched to the location.
+                            <p>MTF Alpha-21 is tasked with locating the active SCP-3023-A instance, determining the appropriate method of decommissioning the object, and performing the decommissioning. As the safest method of eliminating an instance of SCP-3023-A is typically via explosive device, appropriate cover stories should be prepared in advance for any damage and fatalities incurred this way. MTF Alpha-21 liaises with the German Air Force to provide support in the event that conventional tactics prove insufficient.</p>
+                            <p>SCP-3023-B is kept in a reinforced humanoid containment unit at Site-06-2. It must be monitored at all times for signs of anomalous activity. All surveillance footage in SCP-3023's active range must be monitored for activity matching SCP-3023-B's observed anomalous properties.</p>
+                            `,
+                    "description": `SCP-3023 is a phenomenon in which an object will abruptly develop an arachnoid form and gain motility in the presence of humans. SCP-3023 has thus far occurred exclusively in a well-defined region of central Germany (see map). This occurs on an irregular basis, with an average of two months between occurrences. Objects affected by SCP-3023 are collectively designated SCP-3023-A.`,
+                    "additional": `<p>SCP-3023-A will behave erratically, generally moving around their vicinity at random and using their legs and pincers to attack anything they come in contact with. SCP-3023-A display speed, durability, and physical strength far in excess of what their structure and composition should allow. Destruction or dismemberment of the object is sufficient to cause anomalous properties to cease.</p>
+                            <p>The mechanism by which SCP-3023 occurs is unclear.</p>
+                            `
+                },
+                "Mork Borg": {
+                    "stats": {
+                        "Appearance": `A supernatural occurrence localized to a specific area in central Germany, SCP-3023 manifests by transforming inanimate objects into arachnoid, hostile entities with an unnatural strength, speed, and resilience. These creatures, known as SCP-3023-A instances, are highly aggressive and unpredictable, attacking anything in their vicinity. The entity SCP-3023-B is an ordinary man linked to this phenomenon, although he exhibits no visible abnormalities.`,
+                        "Other": `<p><b>Arachnoid Transformation (SCP-3023-A Instances):</b> Objects in SCP-3023’s active area may spontaneously animate into arachnoid creatures, collectively designated SCP-3023-A. Each SCP-3023-A instance is unique, based on the original object’s shape, size, and material. When activated, an SCP-3023-A instance grows legs, pincers, or other appendages, often with capabilities that far exceed their original physical properties. SCP-3023-A instances are typically eradicated using conventional or high-power weaponry.
+                                    <ul>
+                                        <li><b>HP:</b> Varies by size and material (e.g., Small: 8 HP, Medium: 12 HP, Large: 20 HP).</li>
+                                        <li><b>Armor:</b> 1 to 4 (based on material—soft objects like gelatin capsules have 1, metal objects have 3-4).</li>
+                                        <li><b>Speed:</b> Fast (SCP-3023-A instances are surprisingly quick, especially given their size and material).</li>
+                                        <li><b>Attack:</b> Piercing Pincers, D6 (small objects) to D10 (large objects) damage.</li>
+                                    </ul>    
+                                </p>
+                            <p><b>Erratic Behavior:</b> Each SCP-3023-A instance moves and attacks erratically, often destroying anything in its path. All creatures within 10 feet of an SCP-3023-A instance must succeed on an Agility DR 12 each turn or take D4 damage as they are hit by flailing limbs or sharp pincers.</p>
+                            <p><b>Enhanced Durability:</b> SCP-3023-A instances are highly resilient. Any attack against an SCP-3023-A instance suffers a -1 penalty to hit due to its unpredictable movement. When reduced to 0 HP, the object reverts to its original form and loses all anomalous properties.</p>
+                            <p><b>SCP-3023-B - "The Carrier"</b> SCP-3023-B, Mr. Sauer, is a man linked to the SCP-3023 phenomenon. Despite appearing ordinary, he occasionally exhibits unintentional anomalous behavior that may trigger SCP-3023 events. While he has no direct control over this ability, being near him increases the chances of SCP-3023 manifestations.
+                                    <ul>
+                                        <li><b>HP:</b> 10</li>
+                                        <li><b>Armor:</b> 0</li>
+                                        <li><b>Morale:</b> 10 (typically cooperative but becomes distressed when an SCP-3023-A instance activates nearby)</li>
+                                    </ul>
+                                </p>
+                            <p><b>Possession Triggers:</b> Mr. Sauer is believed to unwittingly activate SCP-3023 instances. When he is near specific objects, there is a 1-in-6 chance per hour that SCP-3023 will affect a nearby object, transforming it into an SCP-3023-A instance.</p>
+                            <p><b>Anomalous Influence (Passive):</b> While SCP-3023-B is near, small objects have a slight chance of changing into arachnoid forms, even in non-active SCP-3023 regions. This effect occurs randomly and unpredictably, often when he touches or interacts with specific objects (GM discretion).</p>
+                            `,
+                        "Weakness": `<p>Physical destruction of SCP-3023-A instances will end their anomalous properties, causing them to revert to their original state.</p>
+                                <p>SCP-3023-A instances are often eradicated using explosives or powerful strikes. Task forces deployed to combat SCP-3023-A instances may need specialized equipment.</p>`,
+                    }
+                }
+            }
+        },
         {//SCP 4666
             "id": "SCP4666",
             "name": "SCP 4666 - The Yule Man",
@@ -1785,17 +2149,8 @@ const scpData = {
 
 
 
-//SCP-1678
-//SCP-035
-//SCP-447
-//SCP-040
-//SCP-3023
-//SCP-4669
-//SCP-003
-//SCP-3930
-//SCP-231
-//SCP-009
 //SCP-1230
+//SCP-3930
 
         {//SCP base
             "id": "base",//"SCP000"
@@ -2040,7 +2395,7 @@ const scpData = {
                                     <li>x1 purified water</li>
                                     <li>x2 dirty water</li>
                                     <li>x1 box of BlamCo Mac & Cheese</li>
-                                    <li>x50 caps</li>
+                                    <li>x10 caps</li>
                                 </ul>
                                 `,
                         }
@@ -2049,7 +2404,7 @@ const scpData = {
                         "stats": {
                             "Description": `Taken from the depths of prison or conscripted for reasons you can't remember, you're now a pawn in the Foundation's experiments. But you've survived this long, somehow.`,
                             "HP": `Toughness + d8`,
-                            "StartingMoney:": `1d6 × 10s, d2 Omens`,
+                            "StartingMoney:": `1d2 × 10s, d2 Omens`,
                             "Background:": `(Roll a d6)
                                 <ol>
                                     <li>Convicted murderer, assigned for termination through "containment work."</li>
@@ -2721,12 +3076,15 @@ function openPopup(item, format) {
             document.removeEventListener('keydown', handleKeydown);
         }
     });
+    // Hide "Back to Top" button when popup is open
+    document.getElementById("backToTop").style.display = "none";
 }
 
 // Close popup function
 function closePopup() {
     const overlay = document.querySelector('.overlay');
     if (overlay) overlay.remove();
+    document.getElementById("backToTop").style.display = "block";
 }
 
 // Helper function to add a stat only if it's defined and not empty
@@ -2788,6 +3146,18 @@ function toggleFields() {
 
     updateHeaderText(); // Update the header text based on the current selections
     generateSCPList(); // Regenerate the list based on the new format and player type
+}
+
+function scrollToTop() {
+    console.log("Back to Top button clicked"); // Debug message to confirm function call
+    document.body.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 // Event listener to load the list, saved format, and update header text when the page loads

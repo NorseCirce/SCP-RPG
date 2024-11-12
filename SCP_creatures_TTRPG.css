@@ -184,7 +184,7 @@ hr{
 }
 
 
-/* Button styling */
+/* X Button*/
 .popup button {
     display: block;
     padding: 10px 16px;
@@ -260,7 +260,40 @@ hr{
     }
 }
 
-
-
-
-
+/*Back to top button*/
+#backToTop {
+    display: block; /* Ensure it starts visible */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: larger;
+    z-index: 2000; /* Ensure it appears above other content */
+}
+#backToTop:hover {
+    background-color: #555;
+}
+@media only screen and (max-width: 768px) {
+    #backToTop {
+        display: block; /* Ensure it starts visible */
+        position: fixed;
+        bottom: 0.5%;
+        right: 0.5%;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0px 5px;
+        cursor: pointer;
+        font-size: larger;
+        z-index: 2000; /* Ensure it appears above other content */
+    }
+    #backToTop:hover {
+        background-color: #555;
+    }
+}
